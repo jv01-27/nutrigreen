@@ -5,15 +5,16 @@
     android:id="@+id/p_inicio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_f"
+    android:background="#cbe8ba"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btn_in"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/teal_200"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#72bb53"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="inicio"
         android:text="inicio"
@@ -26,23 +27,38 @@
         android:id="@+id/btn_cred"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/purple_200"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#92d36e"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="credits"
-        android:text="Créditos"
+        android:text="Acerca de"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btn_cred2"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#72bb53"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="historial"
+        android:text="Historial"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cred"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="serif-monospace"
         android:text="NutriGreen"
         android:textColor="#000000"
         android:textSize="50sp"
@@ -50,5 +66,20 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="nag"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/app_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nutrilogo" />
 
 </android.support.constraint.ConstraintLayout>

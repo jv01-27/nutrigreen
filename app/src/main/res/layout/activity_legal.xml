@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".legal"
+    android:orientation = "vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nutrigreen">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabprivacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacidad" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabterminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Términos" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabresponsabilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsabilidad" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

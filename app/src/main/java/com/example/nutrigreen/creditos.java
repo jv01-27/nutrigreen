@@ -14,12 +14,16 @@ public class creditos  extends AppCompatActivity{
         setContentView(R.layout.creditos);
         setupHyperlink();
     }
-    public void volverM (View view){
+    public void volverC (View view){
         Intent sig = new Intent(this, MainActivity.class);
         startActivity(sig);
     }
-    public void setupHyperlink(){
-        TextView linkTextView = findViewById(R.id.legal);
+    public void legal (View view){
+        Intent sig = new Intent(this, legal.class);
+        startActivity(sig);
+    }
+    public void setupHyperlink() {
+        TextView linkTextView = findViewById(R.id.legal_hyperlink);
         linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView linkTextView2 = findViewById(R.id.donacion);

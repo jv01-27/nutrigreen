@@ -5,11 +5,9 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 import android.widget.TextView;
 
 public class entrada_datos extends AppCompatActivity{
@@ -19,6 +17,8 @@ public class entrada_datos extends AppCompatActivity{
     private Spinner sexs;
     private EditText glucosat;
 
+    private Spinner actfisicaS;
+    /*
     private EditText descansot;
     private EditText movimientot;
     private EditText aseopt;
@@ -27,23 +27,27 @@ public class entrada_datos extends AppCompatActivity{
     private Spinner deportes;
     private EditText ttrabajot;
     private EditText tdeportet;
+    */
 
     private int age;
-    private double altura;
+    //private double altura;
     private double peso;
-    private boolean sex;
-    private int glucosa;
+    //private boolean sex;
+    //private int glucosa;
 
+    private double metabolismobasal;
+    private double get;
+
+    /*
     private double descanso;
     private double movimiento;
     private double aseop;
     private double tareashogar;
     private double trabajo;
     private double deporte;
-    private double get;
+    */
 
-    private TextView text;
-
+    private TextView testText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -60,6 +64,10 @@ public class entrada_datos extends AppCompatActivity{
         sexs = (Spinner) findViewById(R.id.spinner_sex);
 
         //Actividad Física
+        //Spinner
+        actfisicaS = (Spinner) findViewById(R.id.actividadfisica);
+
+        /*
         //Textos
         descansot = (EditText)findViewById(R.id.in_descanso);
         movimientot = (EditText)findViewById(R.id.in_movimiento);
@@ -70,14 +78,15 @@ public class entrada_datos extends AppCompatActivity{
         //Spinners
         trabajos = (Spinner) findViewById(R.id.spinner_trabajo);
         deportes = (Spinner) findViewById(R.id.spinner_deporte);
+        */
 
-        text = (TextView) findViewById(R.id.t1);
+        testText = (TextView) findViewById(R.id.t1);
 
-        setupHyperlink();
+        //setupHyperlink();
 
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         // La actividad está creada.
-    }
+        }
     @Override
     protected void onStart() {
         super.onStart();
@@ -109,7 +118,228 @@ public class entrada_datos extends AppCompatActivity{
         // La actividad est� a punto de ser destruida.
     }
 
-    public void siguiente (View view){
+    public void siguiente (View view) throws Exception {
+        Intent sig = new Intent(this, choice.class);
+        sig.putExtra("g_e_t", get());
+
+        startActivity(sig);
+
+        //unused GET method
+        /*
+        glucosa = Integer.parseInt(sglucosa);
+
+        if (peso < 20) {
+            Toast.makeText(this, "Ingrese un peso válido (+20 Kg)",
+                    Toast.LENGTH_LONG).show();
+        } else {
+            if (altura < 1) {
+                Toast.makeText(this, "Ingrese una alturas válida (+ 1m)",
+                        Toast.LENGTH_LONG).show();
+            } else {
+                String sdescanso = descansot.getText().toString();
+                String smovimiento = movimientot.getText().toString();
+                String saseop = aseopt.getText().toString();
+                String stareashogar = tareashogart.getText().toString();
+                String sttrabajo = ttrabajot.getText().toString();
+                String stdeporte = tdeportet.getText().toString();
+
+                descanso = Double.parseDouble(sdescanso);
+                movimiento = Double.parseDouble(smovimiento);
+                aseop = Double.parseDouble(saseop);
+                tareashogar = Double.parseDouble(stareashogar);
+                trabajo = Double.parseDouble(sttrabajo);
+                deporte = Double.parseDouble(stdeporte);
+
+                descanso = descanso * 60 * peso * 0.018;
+                movimiento = movimiento * 60 * peso * 0.063;
+                aseop = aseop * 60 * peso * 0.036;
+                tareashogar = 60* peso * 0.037;
+
+                switch (trabajos.getSelectedItem().toString()){
+                    case "Ligero":
+                        trabajo = trabajo * 60 * peso * 0.031;
+                        break;
+                    case "Activo":
+                        trabajo = trabajo * 60 * peso * 0.049;
+                        break;
+                    case "Muy Activo":
+                        trabajo = trabajo * 60 * peso * 0.096;
+                        break;
+                }
+                switch (deportes.getSelectedItem().toString()){
+                    case "Correr":
+                        deporte = deporte * 60 * peso * 0.151;
+                        break;
+                    case "Tenis":
+                        deporte = deporte * 60 * peso * 0.109;
+                        break;
+                    case "Fútbol":
+                        deporte = deporte * 60 * peso * 0.137;
+                        break;
+                    case "Básquetbol":
+                        deporte = deporte * 60 * peso * 0.14;
+                        break;
+                    case "Ciclismo":
+                        deporte = deporte * 60 * peso * 0.12;
+                        break;
+                    case "Montañismo":
+                        deporte = deporte * 60 * peso * 0.147;
+                        break;
+                    case "Natación":
+                        deporte = deporte * 60 * peso * 0.106;
+                        break;
+                    case "Cabalgata":
+                        deporte = deporte * 60 * peso * 0.107;
+                        break;
+                }
+            }
+        }
+
+        get = descanso + movimiento + aseop + tareashogar + trabajo + deporte;
+
+        if (sex == true) {
+            String getstr = String.valueOf(get);
+            //text.setText(getstr);
+
+            Intent sig = new Intent(this, choice.class);
+            sig.putExtra("g_e_t", getstr);
+
+            startActivity(sig);
+        }
+        else {
+            get = get - (get*10/100);
+            String getstr = String.valueOf(get);
+            //text.setText(getstr);
+
+            Intent sig = new Intent(this, choice.class);
+            sig.putExtra("g_e_t", getstr);
+
+            startActivity(sig);
+        }
+        */
+    }
+
+    public void testget (View view) {
+
+        switch (sexs.getSelectedItem().toString()){
+            case "Masculino":
+                metabolismobasal = metabolismobasalH();
+                break;
+            case "Femenino":
+                metabolismobasal = metabolismobasalM();
+                break;
+        }
+
+        switch (actfisicaS.getSelectedItem().toString()) {
+            case "Leve":
+                get = metabolismobasal * 1.55;
+                break;
+            case "Moderada":
+                get = metabolismobasal * 1.84;
+                break;
+            case "Intensa":
+                get = metabolismobasal * 2.2;
+                break;
+        }
+        String getstr = String.valueOf(get);
+        testText.setText(getstr);
+    }
+
+    public double get () {
+        //String saltura = alturat.getText().toString();
+        //String sglucosa = glucosat.getText().toString();
+
+        //altura = Double.parseDouble(saltura);
+
+        switch (sexs.getSelectedItem().toString()){
+            case "Masculino":
+                metabolismobasal = metabolismobasalH();
+                break;
+            case "Femenino":
+                metabolismobasal = metabolismobasalM();
+                break;
+        }
+
+        switch (actfisicaS.getSelectedItem().toString()) {
+            case "Leve":
+                get = metabolismobasal * 1.55;
+                break;
+            case "Moderada":
+                get = metabolismobasal * 1.84;
+                break;
+            case "Intensa":
+                get = metabolismobasal * 2.2;
+                break;
+        }
+
+        String getstr = String.valueOf(get);
+        testText.setText(getstr);
+
+        return get;
+    }
+
+    public double metabolismobasalH () {
+        String sage = ages.getSelectedItem().toString();
+        String speso = pesot.getText().toString();
+        String saltura = alturat.getText().toString();
+
+        if(!speso.isEmpty()) {
+            if(!saltura.isEmpty()){
+                age = Integer.parseInt(sage);
+                peso = Double.parseDouble(speso);
+
+                double metbasH;
+                if (age == 18) {
+                    metbasH = (17.686 * peso) + 658.2;
+                } else if (age <= 30) {
+                    metbasH = (15.057 * peso) + 692.2;
+                } else if (age <= 60) {
+                    metbasH = (11.472 * peso) + 873.1;
+                } else {
+                    metbasH = (11.711 * peso) + 587.7;
+                }
+                return metbasH;
+            } else {
+                alturat.setError("No ha ingresado su altura!");
+            }
+        } else {
+            pesot.setError("No ha ingresado su peso!");
+        }
+        return 0;
+    }
+
+    public double metabolismobasalM () {
+        String sage = ages.getSelectedItem().toString();
+        String speso = pesot.getText().toString();
+        String saltura = alturat.getText().toString();
+
+        if(!speso.isEmpty()) {
+            if(!saltura.isEmpty()){
+                age = Integer.parseInt(sage);
+                peso = Double.parseDouble(speso);
+
+                double metbasM;
+                if (age == 18) {
+                    metbasM = (13.384 * peso) + 692.6;
+                } else if (age <= 30) {
+                    metbasM = (14.818 * peso) + 486.6;
+                } else if (age <= 60) {
+                    metbasM = (8.126 * peso) + 845.6;
+                } else {
+                    metbasM = (9.082 * peso) + 658.5;
+                }
+                return metbasM;
+            } else {
+                alturat.setError("No ha ingresado su altura!");
+            }
+        }else {
+            pesot.setError("No ha ingresado su peso!");
+        }
+        return 0;
+    }
+
+    /*
+    public void gastoEnergeticoTotal(View view) {
         String sage = ages.getSelectedItem().toString();
         String saltura = alturat.getText().toString();
         String speso = pesot.getText().toString();
@@ -131,151 +361,152 @@ public class entrada_datos extends AppCompatActivity{
         glucosa = Integer.parseInt(sglucosa);
 
         if (peso < 20) {
-                Toast.makeText(this, "Ingrese un peso válido (+20 Kg)",
-                        Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Ingrese un peso válido (+20 Kg)",
+                    Toast.LENGTH_LONG).show();
         } else {
-                if (altura < 1) {
-                    Toast.makeText(this, "Ingrese una alturas válida (+ 1m)",
-                            Toast.LENGTH_LONG).show();
-                } else {
-                    //gastoEnergeticoTotal();
+            if (altura < 1) {
+                Toast.makeText(this, "Ingrese una alturas válida (+ 1m)",
+                        Toast.LENGTH_LONG).show();
+            } else {
+                String sdescanso = descansot.getText().toString();
+                String smovimiento = movimientot.getText().toString();
+                String saseop = aseopt.getText().toString();
+                String stareashogar = tareashogart.getText().toString();
+                String sttrabajo = ttrabajot.getText().toString();
+                String stdeporte = tdeportet.getText().toString();
 
-                    String sdescanso = descansot.getText().toString();
-                    String smovimiento = movimientot.getText().toString();
-                    String saseop = aseopt.getText().toString();
-                    String stareashogar = tareashogart.getText().toString();
-                    String sttrabajo = ttrabajot.getText().toString();
-                    String stdeporte = tdeportet.getText().toString();
+                descanso = Double.parseDouble(sdescanso);
+                movimiento = Double.parseDouble(smovimiento);
+                aseop = Double.parseDouble(saseop);
+                tareashogar = Double.parseDouble(stareashogar);
+                trabajo = Double.parseDouble(sttrabajo);
+                deporte = Double.parseDouble(stdeporte);
 
-                    descanso = Double.parseDouble(sdescanso);
-                    movimiento = Double.parseDouble(smovimiento);
-                    aseop = Double.parseDouble(saseop);
-                    tareashogar = Double.parseDouble(stareashogar);
-                    trabajo = Double.parseDouble(sttrabajo);
-                    deporte = Double.parseDouble(stdeporte);
+                descanso = descanso * 60 * peso * 0.018;
+                movimiento = movimiento * 60 * peso * 0.063;
+                aseop = aseop * 60 * peso * 0.036;
+                tareashogar = 60* peso * 0.037;
 
-                    double descansoc = descanso * 60 * peso * 0.028;
-                    double movimientoc = movimiento * 60 * peso * 0.0953;
-                    double aseopc = aseop * 60 * peso * 0.05;
-                    double tareashogarc = 60* peso * 0.056625;
-
-                    double trabajoc = 0;
-                    double deportec = 0;
-                    switch (trabajos.getSelectedItem().toString()){
-                        case "Ligero":
-                            trabajoc = trabajo * 60 * peso * 0.031;
-                            break;
-                        case "Activo":
-                            trabajoc = trabajo * 60 * peso * 0.049;
-                            break;
-                        case "Muy Activo":
-                            trabajoc = trabajo* 60 * peso * 0.096;
-                            break;
-                    }
-                    switch (deportes.getSelectedItem().toString()){
-                        case "Correr":
-                            deportec = deporte * 60 * peso * 0.151;
-                            break;
-                        case "Tenis":
-                            deportec = deporte * 60 * peso * 0.109;
-                            break;
-                        case "Fútbol":
-                            deportec = deporte * 60 * peso * 0.137;
-                            break;
-                        case "Básquetbol":
-                            deportec = deporte * 60 * peso * 0.14;
-                            break;
-                        case "Ciclismo":
-                            deportec = deporte * 60 * peso * 0.12;
-                            break;
-                        case "Montañismo":
-                            deportec = deporte * 60 * peso * 0.147;
-                            break;
-                        case "Natación":
-                            deportec = deporte * 60 * peso * 0.106;
-                            break;
-                        case "Cabalgata":
-                            deportec = deporte * 60 * peso * 0.107;
-                            break;
-                    }
-                    get = descansoc + movimientoc + aseopc + tareashogarc + trabajoc + deportec;
-
-                    //text.setText((int) get);
-
-                    Intent sig = new Intent(this, alimento.class);
-                    sig.putExtra("g_e_t", get);
-                    startActivity(sig);
+                switch (trabajos.getSelectedItem().toString()){
+                    case "Ligero":
+                        trabajo = trabajo * 60 * peso * 0.031;
+                        break;
+                    case "Activo":
+                        trabajo = trabajo * 60 * peso * 0.049;
+                        break;
+                    case "Muy Activo":
+                        trabajo = trabajo * 60 * peso * 0.096;
+                        break;
+                }
+                switch (deportes.getSelectedItem().toString()){
+                    case "Correr":
+                        deporte = deporte * 60 * peso * 0.151;
+                        break;
+                    case "Tenis":
+                        deporte = deporte * 60 * peso * 0.109;
+                        break;
+                    case "Fútbol":
+                        deporte = deporte * 60 * peso * 0.137;
+                        break;
+                    case "Básquetbol":
+                        deporte = deporte * 60 * peso * 0.14;
+                        break;
+                    case "Ciclismo":
+                        deporte = deporte * 60 * peso * 0.12;
+                        break;
+                    case "Montañismo":
+                        deporte = deporte * 60 * peso * 0.147;
+                        break;
+                    case "Natación":
+                        deporte = deporte * 60 * peso * 0.106;
+                        break;
+                    case "Cabalgata":
+                        deporte = deporte * 60 * peso * 0.107;
+                        break;
                 }
             }
-    }
-
-    public void gastoEnergeticoTotal(View view) {
-        String sdescanso = descansot.getText().toString();
-        String smovimiento = movimientot.getText().toString();
-        String saseop = aseopt.getText().toString();
-        String stareashogar = tareashogart.getText().toString();
-        String sttrabajo = ttrabajot.getText().toString();
-        String stdeporte = tdeportet.getText().toString();
-
-        descanso = Double.parseDouble(sdescanso);
-        movimiento = Double.parseDouble(smovimiento);
-        aseop = Double.parseDouble(saseop);
-        tareashogar = Double.parseDouble(stareashogar);
-        trabajo = Double.parseDouble(sttrabajo);
-        deporte = Double.parseDouble(stdeporte);
-
-        descanso = descanso * 60 * peso * 0.028;
-        movimiento = movimiento * 60 * peso * 0.0953;
-        aseop = aseop * 60 * peso * 0.05;
-        tareashogar = 60* peso * 0.056625;
-
-        switch (trabajos.getSelectedItem().toString()){
-            case "Ligero":
-                trabajo = trabajo * 60 * peso * 0.031;
-                break;
-            case "Activo":
-                trabajo = trabajo * 60 * peso * 0.049;
-                break;
-            case "Muy Activo":
-                trabajo = trabajo * 60 * peso * 0.096;
-                break;
         }
-        switch (deportes.getSelectedItem().toString()){
-            case "Correr":
-                deporte = deporte * 60 * peso * 0.151;
-                break;
-            case "Tenis":
-                deporte = deporte * 60 * peso * 0.109;
-                break;
-            case "Fútbol":
-                deporte = deporte * 60 * peso * 0.137;
-                break;
-            case "Básquetbol":
-                deporte = deporte * 60 * peso * 0.14;
-                break;
-            case "Ciclismo":
-                deporte = deporte * 60 * peso * 0.12;
-                break;
-            case "Montañismo":
-                deporte = deporte * 60 * peso * 0.147;
-                break;
-            case "Natación":
-                deporte = deporte * 60 * peso * 0.106;
-                break;
-            case "Cabalgata":
-                deporte = deporte * 60 * peso * 0.107;
-                break;
-        }
+
         get = descanso + movimiento + aseop + tareashogar + trabajo + deporte;
 
-        text.setText((int) get);
-    }
+        if (sex == true) {
+            String getstr = String.valueOf(get);
+            text.setText(getstr);
+        }
+        else {
+            get = get - (get*10/100);
+            String getstr = String.valueOf(get);
+            text.setText(getstr);
+        }
 
+
+        final nutrigreenBD ngbd= new nutrigreenBD(getApplicationContext());
+        ngbd.agregar_registro(1,age,peso,altura,sexs.getSelectedItem().toString(),glucosa,get,new Date().toString());
+        Toast.makeText(getApplicationContext(),"Sus datos se agregaron a la BD",Toast.LENGTH_SHORT).show();
+
+    }
+    */
+
+    public void test (View view){
+        String sage = ages.getSelectedItem().toString();
+        String saltura = alturat.getText().toString();
+        String speso = pesot.getText().toString();
+        String sglucosa = glucosat.getText().toString();
+
+        String ssex = sexs.getSelectedItem().toString();
+
+        testText.setText(sage + " - " + speso + " - " + saltura + " - " + sglucosa + " - " + ssex);
+        //+ pesot + speso + glucosat + sexs
+    }
     public void volver (View view){
         Intent sig = new Intent(this, MainActivity.class);
         startActivity(sig);
     }
 
+    public void floatingMessage (String message, String posittext, String title){
+        AlertDialog.Builder alerta = new AlertDialog.Builder(entrada_datos.this);
+        alerta.setMessage(message)
+
+                .setCancelable(true)
+                .setPositiveButton(posittext, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle(title);
+        titulo.show();
+    }
+    public void helpAF (View view){
+        AlertDialog.Builder alerta = new AlertDialog.Builder(entrada_datos.this);
+        alerta.setMessage("La actividad leve considera actividades como:\n" +
+                "\t- Cocinar.\n" +
+                "\t- Limpiar la casa.\n" +
+                "\t- Cuidar a los niños.\n" +
+                "\t- Trabajar sentado.\n" +
+                "\t- Caminar hasta 1 hora por día.\n \n" +
+                "La actividad moderada considera actividades como:\n" +
+                "\t- Correr, nadar, bailar, o andar en bici al menos 1 hora por día.\n" +
+                "\t- Trabajar como obrero en la construcción, vendedor puerta a puerta, cartero o repartidor de mercancía leve.\n \n" +
+                "La actividad intensa considera actividades como:\n" +
+                "\t- Correr, nadar, bailar, o andar en bici al menos 2 hora por día.\n" +
+                "\t- Trabajador rural que utiliza instrumentos manuales y que caminan largas distancias o repartidor de mercancía pesada.")
+
+                .setCancelable(true)
+                .setPositiveButton("Entendido", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle("Ayuda: Actividad Física");
+        titulo.show();
+    }
+
+    //unused help methods
+    /*
     public void setupHyperlink(){
         TextView linkTextView = findViewById(R.id.terminos);
         linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -314,6 +545,7 @@ public class entrada_datos extends AppCompatActivity{
         titulo.setTitle("Ayuda: Tipos de Diabetes");
         titulo.show();
     }
+    */
     public void helpGlucosa (View view){
         AlertDialog.Builder alerta = new AlertDialog.Builder(entrada_datos.this);
         alerta.setMessage("El nivel de glucosa en sangre o glucemia es la cantidad de glucosa (azúcar), que circula por el torrente sanguíneo. \n" +
@@ -331,6 +563,8 @@ public class entrada_datos extends AppCompatActivity{
         titulo.setTitle("Ayuda: Nivel de Glucosa");
         titulo.show();
     }
+
+    /*
     public void helpDescanso (View view){
         AlertDialog.Builder alerta = new AlertDialog.Builder(entrada_datos.this);
         alerta.setMessage("Entre las actividades involucradas tenemos:\n" +
@@ -441,4 +675,5 @@ public class entrada_datos extends AppCompatActivity{
         titulo.setTitle("Ayuda: Deportes");
         titulo.show();
     }
+    */
 }

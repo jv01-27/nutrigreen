@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        Toast.makeText(this, "¡Bienvenido(a)!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "¡Bienvenido(a)!", Toast.LENGTH_SHORT).show();
         // La actividad está creada.
 
     }
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "¡Vuelva Pronto!", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "¡Vuelva Pronto!", Toast.LENGTH_LONG).show();
         // La actividad est� a punto de ser destruida.
     }
 
@@ -44,5 +44,13 @@ public class MainActivity extends AppCompatActivity{
     public void credits (View view) {
         Intent init2 = new Intent(this, creditos.class);
         startActivity(init2);
+    }
+    public void historial (View view) {
+        Intent h = new Intent(this, historial.class);
+        startActivity(h);
+    }
+    public void nag (View view){
+        Intent sig = new Intent(this, nag.class);
+        startActivity(sig);
     }
 }

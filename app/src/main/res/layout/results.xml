@@ -5,6 +5,8 @@
     android:id="@+id/vert1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#cbe8ba"
+    android:orientation="vertical"
     tools:context=".results1">
 
     <TextView

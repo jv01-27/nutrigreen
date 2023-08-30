@@ -4,12 +4,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class alimento extends AppCompatActivity {
+public class alimento extends AppCompatActivity implements OnItemSelectedListener {
 
+    private Spinner sp_time;
     private Spinner sp_fr;
     private Spinner sp_veg;
     private Spinner sp_carb;
@@ -30,6 +35,7 @@ public class alimento extends AppCompatActivity {
         setContentView(R.layout.activity_alimento);
 
         //Spinners
+        sp_time = (Spinner)findViewById(R.id.spinner_tiempo);
         sp_fr = (Spinner)findViewById(R.id.spinner_fr);
         sp_veg = (Spinner)findViewById(R.id.spinner_veg);
         sp_carb = (Spinner)findViewById(R.id.spinner_carb);
@@ -37,10 +43,112 @@ public class alimento extends AppCompatActivity {
         sp_lac = (Spinner)findViewById(R.id.spinner_lac);
 
         //Textos
-        get_t = (TextView)findViewById(R.id.text_get);
+        //get_t = (TextView)findViewById(R.id.text_get);
 
-        get_t.setText("Gasto Energpetico: " + getIntent().getStringExtra("g_e_t") + " KCal");
+        //get_t.setText("Gasto Energpetico: " + getIntent().getStringExtra("g_e_t") + " KCal");
+
+        ArrayAdapter <CharSequence> tiempos = ArrayAdapter.createFromResource(
+                this,
+                R.array.tiempo,
+                android.R.layout.simple_spinner_item);
+        tiempos.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_time.setAdapter(tiempos);
+        sp_time.setOnItemSelectedListener(this);
+
     }
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        //Cambiar el Spinner de Fruta
+        int[] t1  = {R.array.no_select,
+                R.array.fruta_des,
+                R.array.fruta_alm,
+                R.array.fruta_com,
+                R.array.fruta_cen};
+
+        ArrayAdapter <CharSequence> fr_t = ArrayAdapter.createFromResource(
+                this,
+                t1[i],
+                android.R.layout.simple_spinner_item);
+        fr_t.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_fr.setAdapter(fr_t);
+
+        //Cambio de porcentaje de cálculo
+
+        //Cambiar el Spinner de Verdura
+        int [] t2 = {R.array.no_select,
+                R.array.verdura_des,
+                R.array.verdura_alm,
+                R.array.verdura_com,
+                R.array.verdura_cen};
+
+        ArrayAdapter <CharSequence> veg_t = ArrayAdapter.createFromResource(
+                this,
+                t2[i],
+                android.R.layout.simple_spinner_item);
+        veg_t.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_veg.setAdapter(veg_t);
+
+        //Cambio de porcentaje de cálculo
+
+        //Cambiar el Spinner de Proteinas/Origen Animal
+        int [] t3 = {R.array.no_select,
+                R.array.proteina_des,
+                R.array.proteina_alm,
+                R.array.proteina_com,
+                R.array.proteina_cen};
+
+        ArrayAdapter <CharSequence> prot_t = ArrayAdapter.createFromResource(
+                this,
+                t3[i],
+                android.R.layout.simple_spinner_item);
+        prot_t.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_prot.setAdapter(prot_t);
+
+        //Cambio de porcentaje de cálculo
+
+        //Cambiar el Spinner de Cereales
+        int [] t4 = {R.array.no_select,
+                R.array.cereales_des,
+                R.array.cereales_alm,
+                R.array.cereales_com,
+                R.array.cereales_cen};
+
+        ArrayAdapter <CharSequence> carb_t = ArrayAdapter.createFromResource(
+                this,
+                t4[i],
+                android.R.layout.simple_spinner_item);
+        carb_t.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_carb.setAdapter(carb_t);
+
+        //Cambio de porcentaje de cálculo
+
+        //Cambiar el Spinner de Lacteos
+        int [] t5 = {R.array.no_select,
+                R.array.lacteos_des,
+                R.array.lacteos_alm,
+                R.array.lacteos_com,
+                R.array.lacteos_cen};
+
+        ArrayAdapter <CharSequence> lac_t = ArrayAdapter.createFromResource(
+                this,
+                t5[i],
+                android.R.layout.simple_spinner_item);
+        lac_t.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_lac.setAdapter(lac_t);
+
+        //Cambio de porcentaje de cálculo
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    public void volverA (View view){
+        Intent sig = new Intent(this, entrada_datos.class);
+        startActivity(sig);
+    }
+
     public void calcular (View view){
         validarSpinnerFruta();
         validarSpinnerVerdura();
@@ -540,4 +648,4 @@ public class alimento extends AppCompatActivity {
                 break;
         }
     }
-}
+    }

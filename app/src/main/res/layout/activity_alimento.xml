@@ -5,7 +5,21 @@
     android:id="@+id/vert"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green"
     tools:context=".alimento">
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#cbe8ba"
+        android:foreground="@drawable/circle_arrow_left"
+        android:onClick="volverA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txt20"
@@ -25,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Cereales y Tubérculos"
+        android:text="Cereales / Tubérculos"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -70,45 +84,44 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_get" />
+        app:layout_constraintTop_toBottomOf="@+id/textu" />
 
     <TextView
-        android:id="@+id/text_get"
+        android:id="@+id/t_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Gasto Energético: "
+        android:text="Seleccione un tiempo de comida"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:visibility="invisible"
+        android:textColor="#008537"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt18" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seleccione los alimentos de su preferencia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#008537"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_tiempo" />
 
     <Spinner
         android:id="@+id/spinner_lac"
         android:layout_width="376dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/lac"
+        android:entries="@array/no_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt23" />
-
-    <TextView
-        android:id="@+id/txt18"
-        android:layout_width="373dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Elija los alimentos de los que se calculará la porción que deberá consumir hoy"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -127,26 +140,51 @@
         android:background="@color/purple_200"
         android:onClick="calcular"
         android:text="Calcular"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#cbe8ba"
+        android:foreground="@drawable/circle_check"
+        android:onClick="calcular"
+        android:shadowRadius="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Spinner
         android:id="@+id/spinner_fr"
         android:layout_width="376dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/fruits"
+        android:entries="@array/no_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt19" />
+
+    <Spinner
+        android:id="@+id/spinner_tiempo"
+        android:layout_width="376dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/tiempo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_txt" />
 
     <Spinner
         android:id="@+id/spinner_veg"
         android:layout_width="376dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/veg"
+        android:entries="@array/no_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt20" />
@@ -156,7 +194,7 @@
         android:layout_width="376dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/carb"
+        android:entries="@array/no_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt21" />
@@ -166,7 +204,7 @@
         android:layout_width="376dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/prot"
+        android:entries="@array/no_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt22" />

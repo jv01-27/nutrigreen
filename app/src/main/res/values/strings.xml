@@ -1,9 +1,15 @@
 <resources>
-    <string name="app_name">NutriGreen</string>
+    <string name="app_name">NutriGreen v3.0</string>
 
     <string-array name="sex">
         <item>Masculino</item>
         <item>Femenino</item>
+    </string-array>
+
+    <string-array name="activfisica">
+        <item>Leve</item>
+        <item>Moderada</item>
+        <item>Intensa</item>
     </string-array>
 
     <string-array name="diabetes">
@@ -120,9 +126,8 @@
         <item>Zapote negro</item>
         <item>Zarzamora</item>
     </string-array>
-
+    <!--
     <string-array name="veg">
-
         <item>Acelga cocida</item>
         <item>Acelga cruda</item>
         <item>Champiñón cocido rebanado</item>
@@ -151,7 +156,6 @@
     </string-array>
 
     <string-array name="carb">
-
         <item>Avena en hojuelas</item>
         <item>Avena Cocida</item>
         <item>Barrita de granola o avena</item>
@@ -176,7 +180,6 @@
     </string-array>
 
     <string-array name="prot">
-
         <item>Almeja fresca</item>
         <item>Atún en agua</item>
         <item>Agujas de res</item>
@@ -242,7 +245,6 @@
     </string-array>
 
     <string-array name="lac">
-
         <item>Leche de soya baja en grasa</item>
         <item>Leche descremada</item>
         <item>Leche entera</item>
@@ -253,6 +255,1014 @@
         <item>Yogurt bebible con fruta</item>
         <item>¡No consumo lácteos!</item>
     </string-array>
+-->
+    <string-array name="tiempo">
+        <item>Seleccione</item>
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Comida</item>
+        <item>Cena</item>
+    </string-array>
+
+    <string-array name="no_select">
+        <item>No ha seleccionado un tiempo</item>
+    </string-array>
+    <!--
+    <string-array name="fruta_des">
+        <item>Acerola</item>
+        <item>Anona</item>
+        <item>Arándanos Frescos</item>
+        <item>Breva</item>
+        <item>Caimito Blanco</item>
+        <item>Caimito Morado</item>
+        <item>Calabaza Melón</item>
+        <item>Caña De Azúcar</item>
+        <item>Capulín</item>
+        <item>Carambolo</item>
+        <item>Cereza (Roja)</item>
+        <item>Chabacano</item>
+        <item>Chicozapote</item>
+        <item>Chirimoya</item>
+        <item>Ciricote</item>
+        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
+        <item>Ciruela Pasa En Pure, Industrializada</item>
+        <item>Ciruela Pasa Entera</item>
+        <item>Ciruela Roja</item>
+        <item>Coco (Pulpa O Copra)</item>
+        <item>Coco Rallado, Seco</item>
+        <item>Cocoyol</item>
+        <item>Coctel De Frutas</item>
+        <item>Coctel De Frutas En Almíbar, Industrializado</item>
+        <item>Coctel De Frutas, Industrializado</item>
+        <item>Dátil Seco Sin Semilla</item>
+        <item>Durazno Amarillo</item>
+        <item>Durazno Blanco</item>
+        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Fresas En Almíbar, Industrializadas</item>
+        <item>Frutas Secas O Deshidratadas</item>
+        <item>Fruto Del Pan</item>
+        <item>Garambullo</item>
+        <item>Granada China</item>
+        <item>Granada Roja</item>
+        <item>Guanábana Cimarrona</item>
+        <item>Guaya (Promedio)</item>
+        <item>Guayaba Amarilla (Blanca)</item>
+        <item>Guayaba Promedio</item>
+        <item>Guayaba Rosa (Manzana)</item>
+        <item>Harina De Coco</item>
+        <item>Higo</item>
+        <item>Higo En Almíbar, Industrializado</item>
+        <item>Jícama</item>
+        <item>Jinicuil Crudo (Semillas)</item>
+        <item>Jiotilla</item>
+        <item>Kiwi</item>
+        <item>Lima</item>
+        <item>Limón Agrio</item>
+        <item>Limón Real</item>
+        <item>Lichi</item>
+        <item>Mamey</item>
+        <item>Mandarina Común</item>
+        <item>Mandarina Reyna O China</item>
+        <item>Mango (Promedio)</item>
+        <item>Mango Criollo</item>
+        <item>Mango En Almíbar, Industrializado</item>
+        <item>Mango Manila</item>
+        <item>Mango Petacón</item>
+        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
+        <item>Manzana Criolla (Roja O Amarilla)</item>
+        <item>Manzana En Almíbar, Industrializada</item>
+        <item>Manzana Red Delicious</item>
+        <item>Maracuyá</item>
+        <item>Marañón Fresco</item>
+        <item>Melocotón (Prisco)</item>
+        <item>Melón Chino (Cantalupo)</item>
+        <item>Melón Promedio</item>
+        <item>Melón Valenciano</item>
+        <item>Membrillo</item>
+        <item>Nanche</item>
+        <item>Nanche Agrio</item>
+        <item>Naranja Agria</item>
+        <item>Naranja Cajera</item>
+        <item>Naranja China</item>
+        <item>Naranja Promedio</item>
+        <item>Nectarina</item>
+        <item>Níspero</item>
+        <item>Otra Fruta (Promedio)</item>
+        <item>Papaya</item>
+        <item>Pasas Golden</item>
+        <item>Pera Criolla, Dura</item>
+        <item>Pera Mantequilla</item>
+        <item>Peras En Almíbar, Industrializadas</item>
+        <item>Perón</item>
+        <item>Persimon</item>
+        <item>Piña</item>
+        <item>Piña En Almíbar, Industrializada</item>
+        <item>Pitahaya</item>
+        <item>Plátano (Promedio)</item>
+        <item>Plátano Dominico</item>
+        <item>Plátano Macho</item>
+        <item>Plátano Manzano</item>
+        <item>Plátano Morado</item>
+        <item>Plátano Tabasco</item>
+        <item>Pomarrosa</item>
+        <item>Pomelo</item>
+        <item>Pure De Manzana, Industrializado</item>
+        <item>Sandia (Ovalada)</item>
+        <item>Sandia Criolla (Redonda, Rayada)</item>
+        <item>Saramuyo</item>
+        <item>Tamarindo</item>
+        <item>Tejocote</item>
+        <item>Toronja</item>
+        <item>Tuna Cardona</item>
+        <item>Tuna Con Semilla (Promedio)</item>
+        <item>Uva (Todos Tipos)</item>
+        <item>Uva Blanca</item>
+        <item>Uva Negra</item>
+        <item>Xocoyol</item>
+        <item>Zapote Amarillo</item>
+        <item>Zapote Blanco</item>
+        <item>Zapote Borracho</item>
+        <item>Zapote Negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_alm">
+        <item>Acerola</item>
+        <item>Anona</item>
+        <item>Arándanos Frescos</item>
+        <item>Breva</item>
+        <item>Caimito Blanco</item>
+        <item>Caimito Morado</item>
+        <item>Calabaza Melón</item>
+        <item>Caña De Azúcar</item>
+        <item>Capulín</item>
+        <item>Carambolo</item>
+        <item>Cereza (Roja)</item>
+        <item>Chabacano</item>
+        <item>Chicozapote</item>
+        <item>Chirimoya</item>
+        <item>Ciricote</item>
+        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
+        <item>Ciruela Pasa En Pure, Industrializada</item>
+        <item>Ciruela Pasa Entera</item>
+        <item>Ciruela Roja</item>
+        <item>Coco (Pulpa O Copra)</item>
+        <item>Coco Rallado, Seco</item>
+        <item>Cocoyol</item>
+        <item>Coctel De Frutas</item>
+        <item>Coctel De Frutas En Almíbar, Industrializado</item>
+        <item>Coctel De Frutas, Industrializado</item>
+        <item>Dátil Seco Sin Semilla</item>
+        <item>Durazno Amarillo</item>
+        <item>Durazno Blanco</item>
+        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Fresas En Almíbar, Industrializadas</item>
+        <item>Frutas Secas O Deshidratadas</item>
+        <item>Fruto Del Pan</item>
+        <item>Garambullo</item>
+        <item>Granada China</item>
+        <item>Granada Roja</item>
+        <item>Guanábana Cimarrona</item>
+        <item>Guaya (Promedio)</item>
+        <item>Guayaba Amarilla (Blanca)</item>
+        <item>Guayaba Promedio</item>
+        <item>Guayaba Rosa (Manzana)</item>
+        <item>Harina De Coco</item>
+        <item>Higo</item>
+        <item>Higo En Almíbar, Industrializado</item>
+        <item>Jícama</item>
+        <item>Jinicuil Crudo (Semillas)</item>
+        <item>Jiotilla</item>
+        <item>Kiwi</item>
+        <item>Lima</item>
+        <item>Limón Agrio</item>
+        <item>Limón Real</item>
+        <item>Lichi</item>
+        <item>Mamey</item>
+        <item>Mandarina Común</item>
+        <item>Mandarina Reyna O China</item>
+        <item>Mango (Promedio)</item>
+        <item>Mango Criollo</item>
+        <item>Mango En Almíbar, Industrializado</item>
+        <item>Mango Manila</item>
+        <item>Mango Petacón</item>
+        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
+        <item>Manzana Criolla (Roja O Amarilla)</item>
+        <item>Manzana En Almíbar, Industrializada</item>
+        <item>Manzana Red Delicious</item>
+        <item>Maracuyá</item>
+        <item>Marañón Fresco</item>
+        <item>Melocotón (Prisco)</item>
+        <item>Melón Chino (Cantalupo)</item>
+        <item>Melón Promedio</item>
+        <item>Melón Valenciano</item>
+        <item>Membrillo</item>
+        <item>Nanche</item>
+        <item>Nanche Agrio</item>
+        <item>Naranja Agria</item>
+        <item>Naranja Cajera</item>
+        <item>Naranja China</item>
+        <item>Naranja Promedio</item>
+        <item>Nectarina</item>
+        <item>Níspero</item>
+        <item>Otra Fruta (Promedio)</item>
+        <item>Papaya</item>
+        <item>Pasas Golden</item>
+        <item>Pera Criolla, Dura</item>
+        <item>Pera Mantequilla</item>
+        <item>Peras En Almíbar, Industrializadas</item>
+        <item>Perón</item>
+        <item>Persimon</item>
+        <item>Piña</item>
+        <item>Piña En Almíbar, Industrializada</item>
+        <item>Pitahaya</item>
+        <item>Plátano (Promedio)</item>
+        <item>Plátano Dominico</item>
+        <item>Plátano Macho</item>
+        <item>Plátano Manzano</item>
+        <item>Plátano Morado</item>
+        <item>Plátano Tabasco</item>
+        <item>Pomarrosa</item>
+        <item>Pomelo</item>
+        <item>Pure De Manzana, Industrializado</item>
+        <item>Sandia (Ovalada)</item>
+        <item>Sandia Criolla (Redonda, Rayada)</item>
+        <item>Saramuyo</item>
+        <item>Tamarindo</item>
+        <item>Tejocote</item>
+        <item>Toronja</item>
+        <item>Tuna Cardona</item>
+        <item>Tuna Con Semilla (Promedio)</item>
+        <item>Uva (Todos Tipos)</item>
+        <item>Uva Blanca</item>
+        <item>Uva Negra</item>
+        <item>Xocoyol</item>
+        <item>Zapote Amarillo</item>
+        <item>Zapote Blanco</item>
+        <item>Zapote Borracho</item>
+        <item>Zapote Negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_com">
+        <item>Acerola</item>
+        <item>Anona</item>
+        <item>Arándanos Frescos</item>
+        <item>Breva</item>
+        <item>Caimito Blanco</item>
+        <item>Caimito Morado</item>
+        <item>Calabaza Melón</item>
+        <item>Caña De Azúcar</item>
+        <item>Capulín</item>
+        <item>Carambolo</item>
+        <item>Cereza (Roja)</item>
+        <item>Chabacano</item>
+        <item>Chicozapote</item>
+        <item>Chirimoya</item>
+        <item>Ciricote</item>
+        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
+        <item>Ciruela Pasa En Pure, Industrializada</item>
+        <item>Ciruela Pasa Entera</item>
+        <item>Ciruela Roja</item>
+        <item>Coco (Pulpa O Copra)</item>
+        <item>Coco Rallado, Seco</item>
+        <item>Cocoyol</item>
+        <item>Coctel De Frutas</item>
+        <item>Coctel De Frutas En Almíbar, Industrializado</item>
+        <item>Coctel De Frutas, Industrializado</item>
+        <item>Dátil Seco Sin Semilla</item>
+        <item>Durazno Amarillo</item>
+        <item>Durazno Blanco</item>
+        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Fresas En Almíbar, Industrializadas</item>
+        <item>Frutas Secas O Deshidratadas</item>
+        <item>Fruto Del Pan</item>
+        <item>Garambullo</item>
+        <item>Granada China</item>
+        <item>Granada Roja</item>
+        <item>Guanábana Cimarrona</item>
+        <item>Guaya (Promedio)</item>
+        <item>Guayaba Amarilla (Blanca)</item>
+        <item>Guayaba Promedio</item>
+        <item>Guayaba Rosa (Manzana)</item>
+        <item>Harina De Coco</item>
+        <item>Higo</item>
+        <item>Higo En Almíbar, Industrializado</item>
+        <item>Jícama</item>
+        <item>Jinicuil Crudo (Semillas)</item>
+        <item>Jiotilla</item>
+        <item>Kiwi</item>
+        <item>Lima</item>
+        <item>Limón Agrio</item>
+        <item>Limón Real</item>
+        <item>Lichi</item>
+        <item>Mamey</item>
+        <item>Mandarina Común</item>
+        <item>Mandarina Reyna O China</item>
+        <item>Mango (Promedio)</item>
+        <item>Mango Criollo</item>
+        <item>Mango En Almíbar, Industrializado</item>
+        <item>Mango Manila</item>
+        <item>Mango Petacón</item>
+        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
+        <item>Manzana Criolla (Roja O Amarilla)</item>
+        <item>Manzana En Almíbar, Industrializada</item>
+        <item>Manzana Red Delicious</item>
+        <item>Maracuyá</item>
+        <item>Marañón Fresco</item>
+        <item>Melocotón (Prisco)</item>
+        <item>Melón Chino (Cantalupo)</item>
+        <item>Melón Promedio</item>
+        <item>Melón Valenciano</item>
+        <item>Membrillo</item>
+        <item>Nanche</item>
+        <item>Nanche Agrio</item>
+        <item>Naranja Agria</item>
+        <item>Naranja Cajera</item>
+        <item>Naranja China</item>
+        <item>Naranja Promedio</item>
+        <item>Nectarina</item>
+        <item>Níspero</item>
+        <item>Otra Fruta (Promedio)</item>
+        <item>Papaya</item>
+        <item>Pasas Golden</item>
+        <item>Pera Criolla, Dura</item>
+        <item>Pera Mantequilla</item>
+        <item>Peras En Almíbar, Industrializadas</item>
+        <item>Perón</item>
+        <item>Persimon</item>
+        <item>Piña</item>
+        <item>Piña En Almíbar, Industrializada</item>
+        <item>Pitahaya</item>
+        <item>Plátano (Promedio)</item>
+        <item>Plátano Dominico</item>
+        <item>Plátano Macho</item>
+        <item>Plátano Manzano</item>
+        <item>Plátano Morado</item>
+        <item>Plátano Tabasco</item>
+        <item>Pomarrosa</item>
+        <item>Pomelo</item>
+        <item>Pure De Manzana, Industrializado</item>
+        <item>Sandia (Ovalada)</item>
+        <item>Sandia Criolla (Redonda, Rayada)</item>
+        <item>Saramuyo</item>
+        <item>Tamarindo</item>
+        <item>Tejocote</item>
+        <item>Toronja</item>
+        <item>Tuna Cardona</item>
+        <item>Tuna Con Semilla (Promedio)</item>
+        <item>Uva (Todos Tipos)</item>
+        <item>Uva Blanca</item>
+        <item>Uva Negra</item>
+        <item>Xocoyol</item>
+        <item>Zapote Amarillo</item>
+        <item>Zapote Blanco</item>
+        <item>Zapote Borracho</item>
+        <item>Zapote Negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_cen">
+        <item>Acerola</item>
+        <item>Anona</item>
+        <item>Arándanos Frescos</item>
+        <item>Breva</item>
+        <item>Caimito Blanco</item>
+        <item>Caimito Morado</item>
+        <item>Calabaza Melón</item>
+        <item>Caña De Azúcar</item>
+        <item>Capulín</item>
+        <item>Carambolo</item>
+        <item>Cereza (Roja)</item>
+        <item>Chabacano</item>
+        <item>Chicozapote</item>
+        <item>Chirimoya</item>
+        <item>Ciricote</item>
+        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
+        <item>Ciruela Pasa En Pure, Industrializada</item>
+        <item>Ciruela Pasa Entera</item>
+        <item>Ciruela Roja</item>
+        <item>Coco (Pulpa O Copra)</item>
+        <item>Coco Rallado, Seco</item>
+        <item>Cocoyol</item>
+        <item>Coctel De Frutas</item>
+        <item>Coctel De Frutas En Almíbar, Industrializado</item>
+        <item>Coctel De Frutas, Industrializado</item>
+        <item>Dátil Seco Sin Semilla</item>
+        <item>Durazno Amarillo</item>
+        <item>Durazno Blanco</item>
+        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Fresas En Almíbar, Industrializadas</item>
+        <item>Frutas Secas O Deshidratadas</item>
+        <item>Fruto Del Pan</item>
+        <item>Garambullo</item>
+        <item>Granada China</item>
+        <item>Granada Roja</item>
+        <item>Guanábana Cimarrona</item>
+        <item>Guaya (Promedio)</item>
+        <item>Guayaba Amarilla (Blanca)</item>
+        <item>Guayaba Promedio</item>
+        <item>Guayaba Rosa (Manzana)</item>
+        <item>Harina De Coco</item>
+        <item>Higo</item>
+        <item>Higo En Almíbar, Industrializado</item>
+        <item>Jícama</item>
+        <item>Jinicuil Crudo (Semillas)</item>
+        <item>Jiotilla</item>
+        <item>Kiwi</item>
+        <item>Lima</item>
+        <item>Limón Agrio</item>
+        <item>Limón Real</item>
+        <item>Lichi</item>
+        <item>Mamey</item>
+        <item>Mandarina Común</item>
+        <item>Mandarina Reyna O China</item>
+        <item>Mango (Promedio)</item>
+        <item>Mango Criollo</item>
+        <item>Mango En Almíbar, Industrializado</item>
+        <item>Mango Manila</item>
+        <item>Mango Petacón</item>
+        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
+        <item>Manzana Criolla (Roja O Amarilla)</item>
+        <item>Manzana En Almíbar, Industrializada</item>
+        <item>Manzana Red Delicious</item>
+        <item>Maracuyá</item>
+        <item>Marañón Fresco</item>
+        <item>Melocotón (Prisco)</item>
+        <item>Melón Chino (Cantalupo)</item>
+        <item>Melón Promedio</item>
+        <item>Melón Valenciano</item>
+        <item>Membrillo</item>
+        <item>Nanche</item>
+        <item>Nanche Agrio</item>
+        <item>Naranja Agria</item>
+        <item>Naranja Cajera</item>
+        <item>Naranja China</item>
+        <item>Naranja Promedio</item>
+        <item>Nectarina</item>
+        <item>Níspero</item>
+        <item>Otra Fruta (Promedio)</item>
+        <item>Papaya</item>
+        <item>Pasas Golden</item>
+        <item>Pera Criolla, Dura</item>
+        <item>Pera Mantequilla</item>
+        <item>Peras En Almíbar, Industrializadas</item>
+        <item>Perón</item>
+        <item>Persimon</item>
+        <item>Piña</item>
+        <item>Piña En Almíbar, Industrializada</item>
+        <item>Pitahaya</item>
+        <item>Plátano (Promedio)</item>
+        <item>Plátano Dominico</item>
+        <item>Plátano Macho</item>
+        <item>Plátano Manzano</item>
+        <item>Plátano Morado</item>
+        <item>Plátano Tabasco</item>
+        <item>Pomarrosa</item>
+        <item>Pomelo</item>
+        <item>Pure De Manzana, Industrializado</item>
+        <item>Sandia (Ovalada)</item>
+        <item>Sandia Criolla (Redonda, Rayada)</item>
+        <item>Saramuyo</item>
+        <item>Tamarindo</item>
+        <item>Tejocote</item>
+        <item>Toronja</item>
+        <item>Tuna Cardona</item>
+        <item>Tuna Con Semilla (Promedio)</item>
+        <item>Uva (Todos Tipos)</item>
+        <item>Uva Blanca</item>
+        <item>Uva Negra</item>
+        <item>Xocoyol</item>
+        <item>Zapote Amarillo</item>
+        <item>Zapote Blanco</item>
+        <item>Zapote Borracho</item>
+        <item>Zapote Negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    -->
+
+    <string-array name="fruta_des">
+        <item>Arándano</item>
+        <item>Chabacano</item>
+        <item>Chirimoya</item>
+        <item>Ciruela</item>
+        <item>Ciruela pasa deshuesada</item>
+        <item>Durazno (chico)</item>
+        <item>Frambuesa</item>
+        <item>Fresa rebanada</item>
+        <item>Gajos de mandarina, toronja y naranja</item>
+        <item>Granada china</item>
+        <item>Granada roja</item>
+        <item>Guanábana</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lichis</item>
+        <item>Lima</item>
+        <item>Mamey</item>
+        <item>Mandarina (chica)</item>
+        <item>Mango ataulfo</item>
+        <item>Mango petacón</item>
+        <item>Manzana (chica)</item>
+        <item>Melón picado</item>
+        <item>Naranja</item>
+        <item>Papaya picada</item>
+        <item>Pasas</item>
+        <item>Pera</item>
+        <item>Piña picada</item>
+        <item>Plátano macho</item>
+        <item>Plátano tabasco</item>
+        <item>Sandía picada</item>
+        <item>Toronja</item>
+        <item>Tuna</item>
+        <item>Uva roja o verde</item>
+        <item>Zapote negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_alm">
+        <item>Arándano</item>
+        <item>Chabacano</item>
+        <item>Chirimoya</item>
+        <item>Ciruela</item>
+        <item>Ciruela pasa deshuesada</item>
+        <item>Durazno (chico)</item>
+        <item>Frambuesa</item>
+        <item>Fresa rebanada</item>
+        <item>Gajos de mandarina, toronja y naranja</item>
+        <item>Granada china</item>
+        <item>Granada roja</item>
+        <item>Guanábana</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lichis</item>
+        <item>Lima</item>
+        <item>Mamey</item>
+        <item>Mandarina (chica)</item>
+        <item>Mango ataulfo</item>
+        <item>Mango petacón</item>
+        <item>Manzana (chica)</item>
+        <item>Melón picado</item>
+        <item>Naranja</item>
+        <item>Papaya picada</item>
+        <item>Pasas</item>
+        <item>Pera</item>
+        <item>Piña picada</item>
+        <item>Plátano macho</item>
+        <item>Plátano tabasco</item>
+        <item>Sandía picada</item>
+        <item>Toronja</item>
+        <item>Tuna</item>
+        <item>Uva roja o verde</item>
+        <item>Zapote negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_com">
+        <item>Arándano</item>
+        <item>Chabacano</item>
+        <item>Chirimoya</item>
+        <item>Ciruela</item>
+        <item>Ciruela pasa deshuesada</item>
+        <item>Durazno (chico)</item>
+        <item>Frambuesa</item>
+        <item>Fresa rebanada</item>
+        <item>Gajos de mandarina, toronja y naranja</item>
+        <item>Granada china</item>
+        <item>Granada roja</item>
+        <item>Guanábana</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lichis</item>
+        <item>Lima</item>
+        <item>Mamey</item>
+        <item>Mandarina (chica)</item>
+        <item>Mango ataulfo</item>
+        <item>Mango petacón</item>
+        <item>Manzana (chica)</item>
+        <item>Melón picado</item>
+        <item>Naranja</item>
+        <item>Papaya picada</item>
+        <item>Pasas</item>
+        <item>Pera</item>
+        <item>Piña picada</item>
+        <item>Plátano macho</item>
+        <item>Plátano tabasco</item>
+        <item>Sandía picada</item>
+        <item>Toronja</item>
+        <item>Tuna</item>
+        <item>Uva roja o verde</item>
+        <item>Zapote negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+    <string-array name="fruta_cen">
+        <item>Arándano</item>
+        <item>Chabacano</item>
+        <item>Chirimoya</item>
+        <item>Ciruela</item>
+        <item>Ciruela pasa deshuesada</item>
+        <item>Durazno (chico)</item>
+        <item>Frambuesa</item>
+        <item>Fresa rebanada</item>
+        <item>Gajos de mandarina, toronja y naranja</item>
+        <item>Granada china</item>
+        <item>Granada roja</item>
+        <item>Guanábana</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lichis</item>
+        <item>Lima</item>
+        <item>Mamey</item>
+        <item>Mandarina (chica)</item>
+        <item>Mango ataulfo</item>
+        <item>Mango petacón</item>
+        <item>Manzana (chica)</item>
+        <item>Melón picado</item>
+        <item>Naranja</item>
+        <item>Papaya picada</item>
+        <item>Pasas</item>
+        <item>Pera</item>
+        <item>Piña picada</item>
+        <item>Plátano macho</item>
+        <item>Plátano tabasco</item>
+        <item>Sandía picada</item>
+        <item>Toronja</item>
+        <item>Tuna</item>
+        <item>Uva roja o verde</item>
+        <item>Zapote negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+
+
+    <string-array name="verdura_des">
+        <item>Acelga cocida</item>
+        <item>Acelga cruda</item>
+        <item>Champiñón cocido rebanado</item>
+        <item>Ejotes cocidos picados</item>
+        <item>Espinaca cocida</item>
+        <item>Flor de calabaza cocida</item>
+        <item>Huitlacoche cocido</item>
+        <item>Lechuga</item>
+        <item>Nabo</item>
+        <item>Nopal Cocido</item>
+        <item>Papaloquelite</item>
+        <item>Pepino rebanado</item>
+        <item>Pimiento morrón (rojo, amarillo, verde)</item>
+        <item>Rábano</item>
+        <item>Salsa mexicana, pico de gallo, taquera, roja o verde</item>
+        <item>Setas cocidas</item>
+        <item>Berro cocido</item>
+        <item>Brócoli cocido</item>
+        <item>Calabacita cocida</item>
+        <item>Chayote cocido</item>
+        <item>Jicama picada</item>
+        <item>Puré de tomate</item>
+        <item>Quelite</item>
+        <item>Romeritos cocidos</item>
+        <item>Zanahoria Picada o rallada</item>
+    </string-array>
+    <string-array name="verdura_alm">
+        <item>Acelga cocida</item>
+        <item>Acelga cruda</item>
+        <item>Champiñón cocido rebanado</item>
+        <item>Ejotes cocidos picados</item>
+        <item>Espinaca cocida</item>
+        <item>Flor de calabaza cocida</item>
+        <item>Huitlacoche cocido</item>
+        <item>Lechuga</item>
+        <item>Nabo</item>
+        <item>Nopal Cocido</item>
+        <item>Papaloquelite</item>
+        <item>Pepino rebanado</item>
+        <item>Pimiento morrón (rojo, amarillo, verde)</item>
+        <item>Rábano</item>
+        <item>Salsa mexicana, pico de gallo, taquera, roja o verde</item>
+        <item>Setas cocidas</item>
+        <item>Berro cocido</item>
+        <item>Brócoli cocido</item>
+        <item>Calabacita cocida</item>
+        <item>Chayote cocido</item>
+        <item>Jicama picada</item>
+        <item>Puré de tomate</item>
+        <item>Quelite</item>
+        <item>Romeritos cocidos</item>
+        <item>Zanahoria Picada o rallada</item>
+    </string-array>
+    <string-array name="verdura_com">
+        <item>Acelga cocida</item>
+        <item>Acelga cruda</item>
+        <item>Champiñón cocido rebanado</item>
+        <item>Ejotes cocidos picados</item>
+        <item>Espinaca cocida</item>
+        <item>Flor de calabaza cocida</item>
+        <item>Huitlacoche cocido</item>
+        <item>Lechuga</item>
+        <item>Nabo</item>
+        <item>Nopal Cocido</item>
+        <item>Papaloquelite</item>
+        <item>Pepino rebanado</item>
+        <item>Pimiento morrón (rojo, amarillo, verde)</item>
+        <item>Rábano</item>
+        <item>Salsa mexicana, pico de gallo, taquera, roja o verde</item>
+        <item>Setas cocidas</item>
+        <item>Berro cocido</item>
+        <item>Brócoli cocido</item>
+        <item>Calabacita cocida</item>
+        <item>Chayote cocido</item>
+        <item>Jicama picada</item>
+        <item>Puré de tomate</item>
+        <item>Quelite</item>
+        <item>Romeritos cocidos</item>
+        <item>Zanahoria Picada o rallada</item>
+    </string-array>
+    <string-array name="verdura_cen">
+        <item>Acelga cocida</item>
+        <item>Acelga cruda</item>
+        <item>Champiñón cocido rebanado</item>
+        <item>Ejotes cocidos picados</item>
+        <item>Espinaca cocida</item>
+        <item>Flor de calabaza cocida</item>
+        <item>Huitlacoche cocido</item>
+        <item>Lechuga</item>
+        <item>Nabo</item>
+        <item>Nopal Cocido</item>
+        <item>Papaloquelite</item>
+        <item>Pepino rebanado</item>
+        <item>Pimiento morrón (rojo, amarillo, verde)</item>
+        <item>Rábano</item>
+        <item>Salsa mexicana, pico de gallo, taquera, roja o verde</item>
+        <item>Setas cocidas</item>
+        <item>Berro cocido</item>
+        <item>Brócoli cocido</item>
+        <item>Calabacita cocida</item>
+        <item>Chayote cocido</item>
+        <item>Jicama picada</item>
+        <item>Puré de tomate</item>
+        <item>Quelite</item>
+        <item>Romeritos cocidos</item>
+        <item>Zanahoria Picada o rallada</item>
+    </string-array>
+
+
+    <string-array name="proteina_des">
+        <item>No hay alimentos Disponibles</item>
+    </string-array>
+    <string-array name="proteina_alm">
+        <item>No hay alimentos Disponibles</item>
+    </string-array>
+    <string-array name="proteina_com">
+        <item>Almeja fresca</item>
+        <item>Atún en agua</item>
+        <item>Agujas de res</item>
+        <item>Arrachera</item>
+        <item>Atún en aceite</item>
+        <item>Bagre</item>
+        <item>Barbacoa Maciza</item>
+        <item>Bistec de ternera</item>
+        <item>Bistec de res</item>
+        <item>Cabeza de pescado</item>
+        <item>Cabrito</item>
+        <item>Calamar </item>
+        <item>Camarón cocido</item>
+        <item>Cangrejo</item>
+        <item>Carne de avestruz</item>
+        <item>Carne de jaiba</item>
+        <item>Carne de res seca</item>
+        <item>Carne molida de pollo y pavo</item>
+        <item>Carne de cerdo</item>
+        <item>Carpa cocida</item>
+        <item>Cecina</item>
+        <item>Conejo</item>
+        <item>Charales frescos</item>
+        <item>Charales secos</item>
+        <item>Clara de huevo</item>
+        <item>Escalopa de res</item>
+        <item>Escamoles</item>
+        <item>Fajitas de pollo sin piel</item>
+        <item>Falda de res</item>
+        <item>Filete de Huachinango</item>
+        <item>Filete de pescado, mero, mojarra, merluza</item>
+        <item>Filete de res y tampiqueña</item>
+        <item>Huachinango</item>
+        <item>Huevo</item>
+        <item>Jaiba cocida entera</item>
+        <item>Liebre</item>
+        <item>Longaniza</item>
+        <item>Maciza de res</item>
+        <item>Medallón de filete de res</item>
+        <item>Mejillones</item>
+        <item>Milanesa de pollo y res</item>
+        <item>Molida de pollo</item>
+        <item>Molleja de pollo</item>
+        <item>Muslo de pollo sin piel</item>
+        <item>Pancita de res</item>
+        <item>Pata de res</item>
+        <item>Pechuga a la plancha, asada, cocida</item>
+        <item>Pechuga de pavo</item>
+        <item>Pechuga de pollo deshuesada</item>
+        <item>Pescado en trozo</item>
+        <item>Pierna de pollo sin piel</item>
+        <item>Puntas de res</item>
+        <item>Queso cottage</item>
+        <item>Salami de pavo</item>
+        <item>Salchicha de cerdo</item>
+        <item>Salchicha de pavo</item>
+        <item>Sardina en aceite</item>
+        <item>Sardina en tomate</item>
+        <item>Suadero</item>
+        <item>Surimi</item>
+        <item>Tampiqueña</item>
+        <item>Venado cocido</item>
+    </string-array>
+    <string-array name="proteina_cen">
+        <item>No hay alimentos Disponibles</item>
+    </string-array>
+
+
+    <string-array name="cereales_des">
+        <item>Avena en hojuelas</item>
+        <item>Avena Cocida</item>
+        <item>Barrita de granola o avena</item>
+        <item>Cereal de caja con azúcar</item>
+        <item>Cereal de caja sin azúcar</item>
+        <item>Crepas</item>
+        <item>Galleta de animalitos</item>
+        <item>Galleta María</item>
+        <item>Galleta salada</item>
+        <item>Hot cake (1 pieza chica)</item>
+        <item>Maíz (blanco, cacahuazintle, palomero)</item>
+        <item>Palitos de pan</item>
+        <item>Palomitas naturales</item>
+        <item>Pan de caja (blanco, integral, multigrano)</item>
+        <item>Pan tostado</item>
+        <item>Papa (hervida o al horno)</item>
+    </string-array>
+    <string-array name="cereales_alm">
+        <item>Barrita de granola o avena</item>
+        <item>Hot cake (1 pieza chica)</item>
+        <item>Maíz (blanco, cacahuazintle, palomero)</item>
+        <item>Palitos de pan</item>
+        <item>Palomitas naturales</item>
+        <item>Papa (hervida o al horno)</item>
+    </string-array>
+    <string-array name="cereales_com">
+        <item>Tlacoyo (sin freír)</item>
+        <item>Tortilla de maíz</item>
+        <item>Tortilla de maíz azul</item>
+        <item>Tortilla de harina</item>
+    </string-array>
+    <string-array name="cereales_cen">
+        <item>Hot cake (1 pieza chica)</item>
+        <item>Maíz (blanco, cacahuazintle, palomero)</item>
+        <item>Palitos de pan</item>
+        <item>Palomitas naturales</item>
+        <item>Papa (hervida o al horno)</item>
+    </string-array>
+
+
+    <string-array name="lacteos_des">
+        <item>Leche de soya baja en grasa</item>
+        <item>Leche descremada</item>
+        <item>Leche entera</item>
+        <item>Leche liconsa liquida</item>
+        <item>Yogurt light</item>
+        <item>Yogurt bebible bajo en grasa y azúcar</item>
+        <item>Yogurt natural</item>
+        <item>Yogurt bebible con fruta</item>
+        <item>¡No consumo lácteos!</item>
+    </string-array>
+    <string-array name="lacteos_alm">
+        <item>Leche de soya baja en grasa</item>
+        <item>Leche descremada</item>
+        <item>Leche entera</item>
+        <item>Leche liconsa liquida</item>
+        <item>Yogurt light</item>
+        <item>Yogurt bebible bajo en grasa y azúcar</item>
+        <item>Yogurt natural</item>
+        <item>Yogurt bebible con fruta</item>
+        <item>¡No consumo lácteos!</item>
+    </string-array>
+    <string-array name="lacteos_com">
+        <item>Yogurt light</item>
+        <item>Yogurt bebible bajo en grasa y azúcar</item>
+        <item>Yogurt natural</item>
+        <item>Yogurt bebible con fruta</item>
+    </string-array>
+    <string-array name="lacteos_cen">
+        <item>Leche de soya baja en grasa</item>
+        <item>Leche descremada</item>
+        <item>Leche entera</item>
+        <item>Leche liconsa liquida</item>
+        <item>Yogurt light</item>
+        <item>Yogurt bebible bajo en grasa y azúcar</item>
+        <item>Yogurt natural</item>
+        <item>Yogurt bebible con fruta</item>
+        <item>¡No consumo lácteos!</item>
+    </string-array>
+
+    <!-- -->
+
+    <string name="m1_1">A</string>
+    <string name="m1_2">B</string>
+    <string name="m1_3">C</string>
+    <string name="m1_4">D</string>
+    <string name="m1_5"><b><big>Desayuno</big></b>		\n
+        <b>Comida:	Queso Primavera	</b>\n
+Ingredientes - - Cantidad	\n
+Queso fresco	80 gr	\n
+Brócoli	1/2 taza	\n
+Chayote	1/4 pieza med	\n
+Cebolla	Al gusto	\n
+Aceite de oliva	3 cucharaditas	\n
+Limón	Al gusto	\n
+Pimiento	Al gusto	\n
+		\n
+        <b>Comida: 	Tortilla	</b>\n
+	Cantidad	\n
+	4 piezas med	\n
+	120 gr	\n
+		\n
+Postre:	Yogurt con fresa	\
+Ingredientes - - Cantidad	\n
+Yogurt natural descremado	3/4 taza	\n
+	180 ml	\n
+Fresa	1 taza	\n
+		\n
+<b><big>Comida</big></b>		\n
+        <b>Comida: 	Sopa de frijol	</b>\n
+Ingredientes - - Cantidad	\n
+Frijol cocido	3/4 taza	\n
+Jitomate	1/2 pieza med	\n
+Chile guajillo	Al gusto	\n
+Cebolla	Al gusto	\n
+Aceite	1 cucharadita	\n
+Epazote y ajo	Al gusto	\n
+Sal	Mínima	\n
+		\n
+        <b>Comida: 	Bistéc en chile pasilla	</b>\n
+Ingredientes - - Cantidad	\n
+Bistec de res	120 gr	\n
+Nopal limpio	2 pieza med	\n
+Chile pasilla	1 pieza med	\n
+Cebolla	Al gusto	\n
+Aceite	2 cucharaditass	\n
+Ajo	Al gusto	\n
+Sal	Mínima	\n
+		\n
+        <b>Comida: 	Ensalada de Berros	</b>\n
+Ingredientes - - Cantidad	\n
+Berro	1 taza	\n
+Aceite de oliva	1 cucharadita	\n
+Limón	Al gusto	\n
+Ajo	Al gusto	\n
+Pimienta	Al gusto	\n
+Sal	Mínima	\n
+		\n
+        <b>Comida: 	Tortilla	</b>\n
+	Cantidad	\n
+	4 piezas med	\n
+	120 gr	\n
+		\n
+Bebida: 	Agua de jamaica	\
+Ingredientes - - Cantidad	\n
+Agua	2 tazas	\n
+Jamaica	Al gusto	\n
+Endulzante artificial	Al gusto	\n
+		\n
+Postre:	Ciruela	\
+	Cantidad	\n
+	2 piezas med	\n
+		\n
+<b><big>Cena</big></b>		\n
+        <b>Comida: 	Pechuga de pavo con calabacitas	</b>\n
+Ingredientes - - Cantidad	\n
+Pechuga de pavo	64 gr	\n
+	3 rebanadas	\n
+Calabacita	1 pieza	\n
+Jitomate	1 1/2 piezas	\n
+Elote en lata	1/2 taza	\n
+Cebolla	Al gusto	\n
+Aceite	3 cucharaditas	\n
+Epazote	Al gusto	\n
+		\n
+        <b>Comida: 	Bolillo sin migajón	</b>\n
+	Cantidad	\n
+	1 pieza	\n
+		\n
+Bebida:	Leche descremada	\
+	Cantidad	\n
+	1 taza	\n
+	240 ml	\n
+		\n
+Postre:	Pera mantequilla	\
+	Cantidad	\n
+	1/2 pieza med	\n
+</string>
+
+    <!-- -->
+
     <string name="adv1">Si usted decide tomar alcohol, reduzca la cantidad y hágalo con un alimento. Consulte con su proveedor de atención médica sobre la forma como el alcohol afectará su azúcar en la sangre y para determinar una cantidad segura para usted.</string>
     <string name="adv2">Los dulces son ricos en grasa y azúcar. Mantenga los tamaños de las porciones pequeños.</string>
     <string name="adv3">Coma dulces que no tengan azúcar.</string>
@@ -262,4 +1272,344 @@
     <string name="hyperlink">Al hacer clic en "Siguiente", usted expresa estar de acuerdo con lo establecido en nuestros <a href="https://noritech.000webhostapp.com/">Términos y Condiciones</a></string>
     <string name="hyperlink2"><a href="https://noritech.000webhostapp.com/">Legal</a></string>
     <string name="hyperlink3"><a href="https://tiny.one/paypal-donation">Donación</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="terminosycondiciones"><big><big><b>Términos y Condiciones</b></big></big>\n
+<p>Actualizado el 07/12/2022</p>\n
+
+\n<big><b>Términos generales</b></big>\n
+
+<p>Al acceder y realizar un cálculo de dieta con NutriGreen, usted confirma que está de acuerdo y sujeto a los términos		de servicio contenidos en los Términos y condiciones que se describen a continuación. Estos términos se aplican a todo el sistema y a cualquier correo electrónico u otro tipo de comunicación entre usted y NutriGreen.</p>\n
+
+<p>En ninguna circunstancia el equipo de NutriGreen será responsable de ningún daño directo, indirecto, especial, incidental o consecuente, que incluye, entre otros, la pérdida de datos o ganancias que surjan del uso o la incapacidad de usar, los materiales de este sistema, incluso si el equipo de NutriGreen o un representante autorizado han sido informados de la posibilidad de tales daños. Si su uso de materiales de este sitio resulta en la necesidad de servicio, reparación o corrección de equipos o datos, usted asume los costos de estos.</p>\n
+<p>NutriGreen no será responsable de ningún resultado que pueda ocurrir durante el curso del uso de nuestros recursos. </p>\n
+
+\n<big><b>Licencia</b></big>\n
+
+<P>NutriGreen le otorga una licencia revocable, no exclusiva, intransferible y limitada para descargar, instalar y usar la plataforma estrictamente de acuerdo con los términos de este Acuerdo.</P>\n
+<P>Estos Términos y condiciones son un contrato entre usted y NutriGreen (referidos en estos Términos y condiciones como "NutriGreen", "nosotros", o "nuestro"), el proveedor del sitio web de NutriGreen y los servicios accesibles desde la plataforma NutriGreen (que se denominan colectivamente en estos Términos y condiciones como el "Servicio de NutriGreen").</P>\n
+<P>Usted acepta estar sujeto a estos Términos y condiciones. Si no está de acuerdo con estos Términos y condiciones, no utilice el Servicio NutriGreen. En estos Términos y condiciones, "usted" se refiere tanto a usted como individuo como a la entidad que representa. Si viola cualquiera de estos Términos y condiciones, nos reservamos el derecho de cancelar su cuenta o bloquear el acceso a su cuenta sin previo aviso.</P>\n
+
+\n<big><b>Definiciones y términos clave</b></big>\n
+<P>Para ayudar a explicar las cosas de la manera más clara posible en estos Términos y Condiciones, cada vez que se hace referencia a cualquiera de estos términos, se definen estrictamente como:</P>\n
+<P><b>Cookie: </b>Pequeña cantidad de datos generados por un sitio web y guardados por su navegador web. Se utiliza para identificar su navegador, proporcionar análisis, recordar información sobre usted, como su preferencia de idioma o información de inicio de sesión.</P>\n
+<P><b>Compañía: </b>cuando estos términos mencionan "Compañía", "nosotros", "nos" o "nuestro", se refiere a Anatum Systems, que es responsable de su información en virtud de estos Términos y Condiciones.</P>\n
+<P><b>Plataforma: </b>sitio web de Internet, aplicación web o aplicación digital de cara al público de NutriGreen</P>\n
+<P><b>País: </b>donde se encuentra NutriGreen o los propietarios / fundadores de NutriGreen en este caso es México.</P>\n
+<P><b>Dispositivo: </b>cualquier dispositivo conectado a Internet, como un teléfono, tablet, computadora o cualquier otro dispositivo que se pueda usar para utilizar NutriGreen y usar los servicios.</P>\n
+<P><b>Servicio: </b>se refiere al servicio brindado por NutriGreen como se describe en los términos relativos (si están disponibles) y en esta plataforma.</P>\n
+<P><b>Terceros: </b>se refiere a anunciantes, patrocinadores de concursos, socios promocionales y de marketing, y otros que brindan nuestro contenido o cuyos productos o servicios que creemos que pueden interesarle.</P>\n
+<p><b>Sitio web: </b> el sitio de NutriGreen, al que se puede acceder a través de esta URL: https://noritech.000webhostapp.com/</p>\n
+<P><b>Usted: </b>una persona o entidad que está registrada con NutriGreen para utilizar los Servicios.</P>\n
+
+\n<big><b>Restricciones</b></big>\n
+<P>Usted acepta no hacerlo y no permitirá que otros:</P>\n
+<P>Licenciar, vender, alquilar, arrendar, asignar, distribuir, transmitir, alojar, subcontratar, divulgar o explotar comercialmente la plataforma o poner la plataforma a disposición de terceros.</P>\n
+<P>Modificar, realizar trabajos derivados, desensamblar, descifrar, realizar una compilación inversa o realizar ingeniería inversa de cualquier parte de la plataforma.</P>\n
+<P>Eliminar, alterar u ocultar cualquier aviso de propiedad (incluido cualquier aviso de derechos de autor o marca registrada) de sus afiliados, socios, proveedores o licenciatarios de la plataforma.</P>\n
+
+
+\n<big><b>Tus sugerencias</b></big>\n
+<P>Cualquier, comentario, idea, mejora o sugerencia (colectivamente, "Sugerencias") que usted proporcione a NutriGreen con respecto al sistema seguirá siendo propiedad única y exclusiva de NutriGreen.</P>\n
+
+<P>NutriGreen tendrá la libertad de usar, copiar, modificar, publicar o redistribuir las Sugerencias para cualquier propósito y de cualquier manera sin ningún crédito o compensación para usted.</P>\n
+
+\n<big><b>Tu consentimiento</b></big>\n
+<P>Hemos actualizado nuestros Términos y condiciones para brindarle total transparencia sobre lo que se establece cuando visita nuestro sitio y cómo se utiliza. Al utilizar nuestra plataforma, registrar una cuenta o realizar una compra, por la presente acepta nuestros Términos y condiciones.</P>\n
+
+\n<big><b>Enlaces a otros Sitios Web</b></big>\n
+<p>Estos Términos y Condiciones se aplican solo a los Servicios. Los Servicios pueden contener enlaces a otros sitios web que NutriGreen no opera ni controla. No somos responsables por el contenido, la precisión o las opiniones expresadas en dichos sitios web, y dichos sitios web no son investigados, monitoreados o verificados por nuestra precisión o integridad. Recuerde que cuando utiliza un enlace para ir de los Servicios a otro sitio web, nuestros Términos y condiciones dejan de estar vigentes. Su navegación e interacción en cualquier otro sitio web, incluidos aquellos que tienen un enlace en nuestra plataforma, están sujetos a las propias reglas y políticas de ese sitio web. Dichos terceros pueden utilizar sus propias cookies u otros métodos para recopilar información sobre usted.</p>\n
+
+
+\n<big><b>Cambios en nuestros Términos y Condiciones</b></big>\n
+<P>Usted reconoce y acepta que NutriGreen puede dejar de brindarle (de forma permanente o temporal) el Servicio (o cualquier función dentro del Servicio) a usted o a los usuarios en general, a discreción exclusiva de NutriGreen, sin previo aviso. Puede dejar de utilizar el Servicio en cualquier momento. No es necesario que informe específicamente a NutriGreen cuando deje de usar el Servicio.</P>\n
+<p>Si decidimos cambiar nuestros Términos y condiciones, publicaremos esos cambios en esta página y / o actualizaremos la fecha de modificación de los Términos y condiciones a continuación.</p>\n
+
+\n<big><b>Modificaciones a nuestra plataforma</b></big>\n
+<P>NutriGreen se reserva el derecho de modificar, suspender o interrumpir, temporal o permanentemente, la plataforma o cualquier servicio al que se conecte, con o sin previo aviso y sin responsabilidad ante usted.</P>\n
+
+\n<big><b>Actualizaciones a nuestra plataforma</b></big>\n
+<P>NutriGreen puede, de vez en cuando, proporcionar mejoras a las características / funcionalidad de la plataforma, que pueden incluir parches, corrección de errores, actualizaciones, mejoras y otras modificaciones ("Actualizaciones").</P>\n
+<P>Las actualizaciones pueden modificar o eliminar ciertas características y / o funcionalidades de la plataforma. Usted acepta que NutriGreen no tiene la obligación de (i) proporcionar Actualizaciones, o (ii) continuar proporcionándole o habilitando características y / o funcionalidades particulares de la plataforma.</P>\n
+<P>Además, acepta que todas las Actualizaciones (i) se considerarán una parte integral de la plataforma y (ii) estarán sujetas a los términos y condiciones de este Acuerdo.</P>\n
+
+\n<big><b>Servicios de Terceros</b></big>\n
+<P>Podemos mostrar, incluir o poner a disposición contenido de terceros (incluidos datos, información, aplicaciones y otros servicios de productos) o proporcionar enlaces a sitios web o servicios de terceros ("Servicios de terceros").</P>\n
+<P>Usted reconoce y acepta que NutriGreen no será responsable de ningún Servicio de terceros, incluida su precisión, integridad, puntualidad, validez, cumplimiento de los derechos de autor, legalidad, decencia, calidad o cualquier otro aspecto de estos. NutriGreen no asume ni tendrá ninguna obligación o responsabilidad ante usted o cualquier otra persona o entidad por los Servicios de terceros.</P>\n
+<P>Los Servicios de terceros y los enlaces a los mismos se brindan únicamente para su conveniencia y usted accede a ellos y los usa completamente bajo su propio riesgo y sujeto a los términos y condiciones de dichos terceros.</P>\n
+
+\n<big><b>Duración y Terminación</b></big>\n
+<P>Este Acuerdo permanecerá en vigor hasta que usted o NutriGreen lo rescindan.</P>\n
+<P>NutriGreen puede, a su entera discreción, en cualquier momento y por cualquier motivo o sin él, suspender o rescindir este Acuerdo con o sin previo aviso.</P>\n
+<P>Este Acuerdo terminará inmediatamente, sin previo aviso de NutriGreen, en caso de que no cumpla con alguna de las disposiciones de este Acuerdo. También puede rescindir este Acuerdo eliminando la plataforma y todas las copias de este de su computadora.</P>\n
+<P>Tras la rescisión de este Acuerdo, deberá dejar de utilizar la plataforma y eliminar todas las copias de la plataforma de su computadora.</P>\n
+<P>La rescisión de este Acuerdo no limitará ninguno de los derechos o recursos de NutriGreen por ley o en equidad en caso de incumplimiento por su parte (durante la vigencia de este Acuerdo) de cualquiera de sus obligaciones en virtud del presente Acuerdo.</P>\n
+
+\n<big><b>Aviso de infracción de Derechos de Autor</b></big>\n
+<P>Si usted es propietario de los derechos de autor o el agente de dicho propietario y cree que cualquier material de nuestra plataforma constituye una infracción de sus derechos de autor, comuníquese con nosotros y proporcione la siguiente información: (a) una firma física o electrónica del propietario de los derechos de autor o una persona autorizada para actuar en su nombre; (b) identificación del material que se alega infringe; (c) su información de contacto, incluida su dirección, número de teléfono y un correo electrónico; (d) una declaración suya de que cree de buena fe que el uso del material no está autorizado por los propietarios de los derechos de autor; y (e) la declaración de que la información en la notificación es precisa y, bajo pena de perjurio, usted está autorizado a actuar en nombre del propietario</P>\n
+
+\n<big><b>Indemnización</b></big>\n
+<p>Usted acepta indemnizar y eximir de responsabilidad a NutriGreen y a sus empresas matrices, subsidiarias, afiliadas, funcionarios, empleados, agentes, socios y otorgantes de licencias (si corresponde) de cualquier reclamo o demanda, incluidos los honorarios razonables de abogados, debido a que surja de su: (a) uso de la plataforma; (b) violación de este Acuerdo o cualquier ley o reglamento; o (c) violación de cualquier derecho de un tercero.</p>\n
+
+\n<big><b>Sin garantías</b></big>\n
+<P>La plataforma se le proporciona "TAL CUAL" y "SEGÚN DISPONIBILIDAD" y con todas las fallas y defectos sin garantía de ningún tipo. En la medida máxima permitida por la ley aplicable, NutriGreen, en su propio nombre y en nombre de sus afiliados y sus respectivos licenciantes y proveedores de servicios, renuncia expresamente a todas las garantías, ya sean expresas, implícitas, legales o de otro tipo, con con respecto a la plataforma , incluidas todas las garantías implícitas de comerciabilidad, idoneidad para un propósito particular, título y no infracción, y garantías que puedan surgir del curso del trato, el curso del desempeño, el uso o la práctica comercial. Sin limitación a lo anterior, NutriGreen no ofrece garantía ni compromiso, y no hace ninguna representación de ningún tipo de que la plataforma cumplirá con sus requisitos, logrará los resultados previstos, será compatible o funcionará con cualquier otro software, sitios web, sistemas o servicios, operen sin interrupciones, cumplan con los estándares de rendimiento o confiabilidad o que no tengan errores o que cualquier error o defecto puede o será corregido.</P>\n
+<P>Sin limitar lo anterior, ni NutriGreen ni ningún proveedor de NutriGreen hace ninguna representación o garantía de ningún tipo, expresa o implícita: (i) en cuanto al funcionamiento o disponibilidad de la plataforma , o la información, contenido y materiales o productos incluidos en el mismo; (ii) que la plataforma será ininterrumpida o libre de errores; (iii) en cuanto a la precisión, confiabilidad o vigencia de cualquier información o contenido proporcionado a través de la plataforma ; o (iv) que la plataforma , sus servidores, el contenido o los correos electrónicos enviados desde o en nombre de NutriGreen están libres de virus, scripts, troyanos, gusanos, malware, bombas de tiempo u otros componentes nocivos.</P>\n
+<P>Algunas jurisdicciones no permiten la exclusión o las limitaciones de las garantías implícitas o las limitaciones de los derechos legales aplicables de un consumidor, por lo que algunas o todas las exclusiones y limitaciones anteriores pueden no aplicarse en su caso.</P>\n
+
+\n<big><b>Limitación de Responsabilidad</b></big>\n
+<P>En la máxima medida permitida por la ley aplicable, en ningún caso NutriGreen o sus proveedores serán responsables de ningún daño especial, incidental, indirecto o consecuente de ningún tipo (incluidos, entre otros, daños por lucro cesante, por pérdida de datos u otra información, por interrupción del negocio, por lesiones personales, por la pérdida de privacidad que surja de alguna manera relacionada con el uso o la imposibilidad de usar la plataforma , software de terceros y / o - hardware de terceros utilizado con la plataforma , o de otro modo en relación con cualquier disposición de este Acuerdo), incluso si NutriGreen o cualquier proveedor ha sido informado de la posibilidad de tales daños e incluso si el recurso no cumple con su propósito esencial.</P>\n
+<p>Algunos estados / jurisdicciones no permiten la exclusión o limitación de daños incidentales o consecuentes, por lo que es posible que la limitación o exclusión anterior no se aplique en su caso.</p>\n
+
+\n<big><b>Divisibilidad</b></big>\n
+<P>Si alguna disposición de este Acuerdo se considera inaplicable o inválida, dicha disposición se cambiará e interpretará para lograr los objetivos de dicha disposición en la mayor medida posible según la ley aplicable y las disposiciones restantes continuarán en pleno vigor y efecto.</P>\n
+<P>Este Acuerdo, junto con la Política de privacidad y cualquier otro aviso legal publicado por NutriGreen en los Servicios, constituirá el acuerdo completo entre usted y NutriGreen con respecto a los Servicios. Si alguna disposición de este Acuerdo es considerada inválida por un tribunal de jurisdicción competente, la invalidez de dicha disposición no afectará la validez de las disposiciones restantes de este Acuerdo, que permanecerán en pleno vigor y efecto. Ninguna renuncia a cualquier término de este Acuerdo se considerará una renuncia adicional o continua de dicho término o cualquier otro término, y el hecho de que NutriGreen no haga valer ningún derecho o disposición en virtud de este Acuerdo no constituirá una renuncia a dicho derecho. o provisión. USTED Y NutriGreen ACEPTAN QUE CUALQUIER CAUSA DE ACCIÓN QUE SURJA O ESTÉ RELACIONADA CON LOS SERVICIOS DEBE COMENZAR DENTRO DE UN (1) AÑO DESPUÉS DE QUE LA CAUSA DE ACCIÓN SE ACUERDA. DE LO CONTRARIO, DICHA CAUSA DE ACCIÓN ESTÁ PERMANENTEMENTE PROHIBIDA.</P>\n
+
+\n<big><b>Renuncia</b></big>\n
+<p>Salvo lo dispuesto en el presente, el hecho de no ejercer un derecho o exigir el cumplimiento de una obligación en virtud de este Acuerdo no afectará la capacidad de una de las partes para ejercer dicho derecho o requerir dicho cumplimiento en cualquier momento posterior, ni constituirá la renuncia a una infracción. cualquier incumplimiento posterior.</p>\n
+<P>Ninguna falla en el ejercicio, ni demora en el ejercicio, por parte de cualquiera de las partes, de cualquier derecho o poder bajo este Acuerdo operará como una renuncia a ese derecho o poder. El ejercicio único o parcial de cualquier derecho o poder en virtud de este Acuerdo tampoco impedirá el ejercicio posterior de ese o cualquier otro derecho otorgado en este documento. En caso de conflicto entre este Acuerdo y cualquier compra u otros términos aplicables, regirán los términos de este Acuerdo.</P>\n
+
+\n<big><b>Enmiendas a este Acuerdo</b></big>\n
+<P>NutriGreen se reserva el derecho, a su entera discreción, de modificar o reemplazar este Acuerdo en cualquier momento. Si una revisión es importante, proporcionaremos un aviso de al menos 30 días antes de que entren en vigor los nuevos términos. Lo que constituye un cambio material se determinará a nuestro exclusivo criterio.</P>\n
+<p>Si continúa accediendo o utilizando nuestra plataforma después de que las revisiones entren en vigor, usted acepta estar sujeto a los términos revisados. Si no está de acuerdo con los nuevos términos, ya no está autorizado para usar NutriGreen.</p>\n
+
+\n<big><b>Acuerdo completo</b></big>\n
+<P>El Acuerdo constituye el acuerdo completo entre usted y NutriGreen con respecto a su uso de la plataforma y reemplaza todos los acuerdos escritos u orales anteriores y contemporáneos entre usted y NutriGreen.</P>\n
+<P>Es posible que esté sujeto a términos y condiciones adicionales que se aplican cuando usa o compra otros servicios de NutriGreen, que NutriGreen le proporcionará en el momento de dicho uso o compra.</P>\n
+
+\n<big><b>Actualizaciones de nuestros Términos</b></big>\n
+<P>Podemos cambiar nuestro Servicio y nuestras políticas, y es posible que debamos realizar cambios en estos Términos para que reflejen con precisión nuestro Servicio y nuestras políticas. A menos que la ley exija lo contrario, le notificaremos (por ejemplo, a través de nuestro Servicio) antes de realizar cambios en estos Términos y le daremos la oportunidad de revisarlos antes de que entren en vigor. Luego, si continúa utilizando el Servicio, estará sujeto a los Términos actualizados. Si no desea aceptar estos o alguno de los Términos actualizados, puede eliminar la plataforma.</P>\n
+
+\n<big><b>Propiedad intelectual</b></big>\n
+<P>la plataforma y todo su contenido, características y funcionalidad (que incluyen, entre otros, toda la información, software, texto, pantallas, imágenes, video y audio, y el diseño, selección y disposición de estos), son propiedad de NutriGreen, sus licenciantes u otros proveedores de dicho material y están protegidos por México y leyes internacionales de derechos de autor, marcas registradas, patentes, secretos comerciales y otras leyes de propiedad intelectual o derechos de propiedad. El material no puede ser copiado, modificado, reproducido, descargado o distribuido de ninguna manera, en su totalidad o en parte, sin el permiso previo expreso por escrito de NutriGreen, a menos que y excepto que se indique expresamente en estos Términos y Condiciones. Se prohíbe cualquier uso no autorizado del material.</P>\n
+
+\n<big><b>Acuerdo de Arbitraje</b></big>\n
+<P>Esta sección se aplica a cualquier disputa, EXCEPTO QUE NO INCLUYE UNA DISPUTA RELACIONADA CON RECLAMOS POR RECURSOS INJUNTIVOS O EQUITATIVOS CON RESPECTO A LA EJECUCIÓN O VALIDEZ DE SUS DERECHOS DE PROPIEDAD INTELECTUAL O DE NutriGreen. El término "disputa" significa cualquier disputa, acción u otra controversia entre usted y NutriGreen en relación con los Servicios o este acuerdo, ya sea en contrato, garantía, agravio, estatuto, regulación, ordenanza o cualquier otra base legal o equitativa. "Disputa" tendrá el significado más amplio posible permitido por la ley.</P>\n
+
+\n<big><b>Aviso de Disputa</b></big>\n
+<P>En el caso de una disputa, usted o NutriGreen deben darle al otro un Aviso de Disputa, que es una declaración escrita que establece el nombre, la dirección y la información de contacto de la parte que la proporcionó, los hechos que dieron lugar a la disputa y la reparación solicitada. Debe enviar cualquier Aviso de disputa por correo electrónico a: anatum.systems.consultas@gmail.com. NutriGreen le enviará cualquier Aviso de disputa por correo a su dirección si la tenemos, o de otra manera a su dirección de correo electrónico. Usted y NutriGreen intentarán resolver cualquier disputa mediante una negociación informal dentro de los sesenta (60) días a partir de la fecha en que se envíe la Notificación de disputa. Después de sesenta (60) días, usted o NutriGreen pueden comenzar el arbitraje.</P>\n
+
+\n<big><b>Arbitraje Obligatorio</b></big>\n
+<p>Si usted y NutriGreen no resuelven ninguna disputa mediante una negociación informal, cualquier otro esfuerzo para resolver la disputa se llevará a cabo exclusivamente mediante arbitraje vinculante como se describe en esta sección. Está renunciando al derecho de litigar (o participar como parte o miembro de la clase) todas las disputas en la corte ante un juez o jurado. La disputa se resolverá mediante arbitraje vinculante de acuerdo con las reglas de arbitraje comercial de la Asociación Americana de Arbitraje. Cualquiera de las partes puede buscar medidas cautelares provisionales o preliminares de cualquier tribunal de jurisdicción competente, según sea necesario para proteger los derechos o la propiedad de las partes en espera de la finalización del arbitraje. Todos y cada uno de los costos, honorarios y gastos legales, contables y de otro tipo en los que incurra la parte ganadora correrán a cargo de la parte no ganadora.</p>\n
+
+\n<big><b>Envíos y Privacidad</b></big>\n
+<P>En el caso de que envíe o publique ideas, sugerencias creativas, diseños, fotografías, información, anuncios, datos o propuestas, incluidas ideas para productos, servicios, funciones, tecnologías o promociones nuevos o mejorados, acepta expresamente que dichos envíos se realizarán automáticamente. será tratado como no confidencial y no propietario y se convertirá en propiedad exclusiva de NutriGreen sin ningún tipo de compensación o crédito para usted. </P>\n
+<P>NutriGreen y sus afiliados no tendrán obligaciones con respecto a dichos envíos o publicaciones y pueden usar las ideas contenidas en dichos envíos o publicaciones para cualquier propósito en cualquier medio a perpetuidad, incluyendo, pero no limitado a desarrollo, fabricación, y comercializar productos y servicios utilizando tales ideas.</P>\n
+
+\n<big><b>Promociones</b></big>\n
+<P>NutriGreen puede, de vez en cuando, incluir concursos, promociones, sorteos u otras actividades ("Promociones") que requieren que envíe material o información sobre usted. Tenga en cuenta que todas las promociones pueden regirse por reglas independientes que pueden contener ciertos requisitos de elegibilidad, como restricciones de edad y ubicación geográfica. Usted es responsable de leer todas las reglas de Promociones para determinar si es elegible para participar o no. Si participa en alguna Promoción, acepta cumplir con todas las Reglas de promociones.</P>\n
+<P>Es posible que se apliquen términos y condiciones adicionales a las compras de bienes o servicios a través de los Servicios, cuyos términos y condiciones forman parte de este Acuerdo mediante esta referencia.</P>\n
+
+\n<big><b>Diverso</b></big>\n
+<P>Si por alguna razón un tribunal de jurisdicción competente determina que alguna disposición o parte de estos Términos y condiciones no se puede hacer cumplir, el resto de estos Términos y condiciones continuará en pleno vigor y efecto. Cualquier renuncia a cualquier disposición de estos Términos y condiciones será efectiva solo si está por escrito y firmada por un representante autorizado de NutriGreen. NutriGreen tendrá derecho a una medida cautelar u otra compensación equitativa (sin la obligación de depositar ninguna fianza o garantía) en caso de incumplimiento anticipado por su parte. NutriGreen opera y controla el Servicio NutriGreen desde sus oficinas en México. El Servicio no está destinado a ser distribuido ni utilizado por ninguna persona o entidad en ninguna jurisdicción o país donde dicha distribución o uso sea contrario a la ley o regulación. En consecuencia, las personas que eligen acceder al Servicio NutriGreen desde otras ubicaciones lo hacen por iniciativa propia y son las únicas responsables del cumplimiento de las leyes locales, en la medida en que las leyes locales sean aplicables. Estos Términos y condiciones (que incluyen e incorporan la Política de privacidad de NutriGreen) contienen el entendimiento completo y reemplazan todos los entendimientos previos entre usted y NutriGreen con respecto a su tema, y usted no puede cambiarlos ni modificarlos. Los títulos de las secciones que se utilizan en este Acuerdo son solo por conveniencia y no se les dará ninguna importancia legal.</P>\n
+
+\n<big><b>Descargo de Responsabilidad</b></big>\n
+<P>Los detalles del documento de “Descargo de Responsabilidad” se pueden consultar desde esta ventana, navegue hasta la tercer sección, llamada "RESPONSABILIDAD" para acceder a ella</P>\n
+
+\n<big><b>Contáctenos</b></big>\n
+<P>No dude en contactarnos si tiene alguna pregunta.</P>\n
+<p>A través de correo electrónico: anatum.systems.consultas@gmail.com</p>\n
+    </string>
+    <string name="politicadeprivacidad"><big><big><b>Política de Privacidad</b></big></big>\n
+<p>Actualizado el 07/12/2022</p>\n
+\n
+<p>NutriGreen. ("nosotros", "nuestro" o "nos") se compromete a proteger su privacidad. Esta Política de privacidad explica cómo NutriGreen. recopila, usa y divulga su información personal. Esta Política de privacidad se aplica a nuestra aplicación, NutriGreen, y sus subdominios asociados (colectivamente, nuestro "Servicio"). Al acceder o utilizar nuestro Servicio, usted indica que ha leído, comprendido y aceptado nuestra recopilación, almacenamiento, uso y divulgación de su información personal como se describe en esta Política de privacidad y en nuestros Términos de servicio.</p>\n
+
+\n<big><b>Definiciones y Términos Clave</b></big>\n
+<P>Para ayudar a explicar las cosas de la manera más clara posible en esta Política de Privacidad, cada vez que se hace referencia a cualquiera de estos términos, se definen estrictamente como:</P>\n
+
+<P><b>Cookie: </b>Pequeña cantidad de datos generados por un sitio web y guardados por su navegador web. Se utiliza para identificar su navegador, proporcionar análisis, recordar información sobre usted, como su preferencia de idioma o información de inicio de sesión.</P>\n
+
+<P><b>Compañía: </b>cuando estos términos mencionan "Compañía", "nosotros", "nos" o "nuestro", se refiere a Anatum Systems, que es responsable de su información en virtud de estos Términos y Condiciones.</P>\n
+
+<P><b>Plataforma: </b>sitio web de Internet, aplicación web o aplicación digital de cara al público de NutriGreen</P>\n
+
+<P><b>País: </b>donde se encuentra NutriGreen o los propietarios / fundadores de NutriGreen en este caso es México.</P>\n
+
+<P><b>Cliente:</b> se refiere a la empresa, organización o persona que se registra para utilizar el Servicio NutriGreen para gestionar las relaciones con sus consumidores o usuarios del servicio.</P>\n
+
+<P><b>Dispositivo: </b>cualquier dispositivo conectado a Internet, como un teléfono, tablet, computadora o cualquier otro dispositivo que se pueda usar para utilizar NutriGreen y usar los servicios.</P>\n
+
+<p><b>Dirección IP: </b>a cada dispositivo conectado a Internet se le asigna un número conocido como dirección de protocolo de Internet (IP). Estos números generalmente se asignan en bloques geográficos. A menudo, se puede utilizar una dirección IP para identificar la ubicación desde la que un dispositivo se conecta a Internet</p>\n
+
+<p><b>Personal: </b>se refiere a aquellas personas que son empleadas por NutriGreen o están bajo contrato para realizar un servicio en nombre de una de las partes.</p>\n
+
+<p><b>Datos personales: </b>cualquier información que directa, indirectamente o en conexión con otra información, incluido un número de identificación personal, permita la identificación de una persona física.</p>\n
+
+<P><b>Servicio: </b>se refiere al servicio brindado por NutriGreen como se describe en los términos relativos (si están disponibles) y en esta plataforma.</P>\n
+
+<P><b>Terceros: </b>se refiere a anunciantes, patrocinadores de concursos, socios promocionales y de marketing, y otros que brindan nuestro contenido o cuyos productos o servicios que creemos que pueden interesarle.</P>\n
+
+<p><b>Sitio web: </b>el sitio de NutriGreen, al que se puede acceder a través de esta URL: https://noritech.000webhostapp.com/</p>\n
+
+<P><b>Usted: </b>una persona o entidad que está registrada con NutriGreen para utilizar los Servicios.</P>\n
+\n<big><b>¿Qué son los Datos Personales?</b></big>\n
+<P>Cualquier dato que se relacione con un individuo identificable o identificable. Los datos personales van más allá del nombre o la dirección de correo electrónico de una persona. Algunos ejemplos incluyen información financiera, opiniones políticas, datos genéticos, datos biométricos, direcciones IP, dirección física, orientación sexual y origen étnico.</P>\n
+
+\n<big><b>¿Qué información recopilamos?</b></big>\n
+<P>La plataforma recopila información suya cuando usted la utiliza, no obstante, la plataforma no se conecta a Internet, la información personal sólo se almacena localmente. Nadie en NutriGreen tiene acceso a esos datos. La información se destruye al desinstalar la plataforma.</P>\n
+<p> - Edad</p>\n
+<p> - Peso</p>\n
+<p> - Altura</p>\n
+<p> - Tipo de Diabetes</p>\n
+<p> - Índice de Glucosa en Sangre</p>\n
+<p> - Correo Electrónico</p>\n
+
+\n<big><b>¿Cómo usamos la información que recopilamos?</b></big>\n
+<P>Cualquiera de la información que recopilamos de usted puede usarse de una de las siguientes maneras:</P>\n
+<p> - Para personalizar su experiencia (su información nos ayuda a responder mejor a sus necesidades individuales)</p>\n
+<p> - Para mejorar nuestra plataforma (nos esforzamos continuamente por mejorar lo que ofrece nuestra plataforma en función de la información y los comentarios que recibimos de usted)</p>\n
+<p> - Para mejorar el servicio al cliente (su información nos ayuda a responder de manera más efectiva a sus solicitudes de servicio al cliente y necesidades de soporte)</p>\n
+<p> - Para calcular raciones de alimentos (Servicio Principal de la plataforma)</p>\n
+
+\n<big><b>¿Cuándo usa NutriGreen la información del cliente de terceros?</b></big>\n
+<P>Recibimos información de terceros cuando se comunica con nosotros. Por ejemplo, cuando nos envía un correo electrónico sobre alguna queja o sugerencia, recibimos información de un tercero que brinda servicios automáticos de detección de fraude a NutriGreen. </P>\n
+
+\n<big><b>¿Compartimos la información que recopilamos con terceros? </b></big>\n
+<P>No. La información personal que usted ingresa en la plataforma no se comparte con ningún tercero. La plataforma no se conecta a Internet, sólo se almacena localmente. Nadie en NutriGreen tiene acceso a esos datos. La información se destruye al desinstalar la plataforma.</P>\n
+
+\n<big><b>¿Dónde y cuándo se recopila la información de los clientes y usuarios finales?</b></big>\n
+<p>NutriGreen recopilará la información personal que nos envíe. También podemos recibir información personal sobre usted de terceros como se describe anteriormente.</p>\n
+
+\n<big><b>¿Podría transferirse mi información a otros países?</b></big>\n
+<p>No. El sistema está incorporado en México. La información no se comparte de forma internacional.</p>\n
+
+\n<big><b>¿La información recopilada a través del Servicio NutriGreen es segura?</b></big>\n
+<p>Tomamos precauciones para proteger la seguridad de su información. La información es segura dentro del dispositivo con la plataforma instalada. Contamos con procedimientos electrónicos para ayudar a salvaguardar, prevenir el acceso no autorizado, mantener la seguridad de los datos y usar correctamente su información. Sin embargo, ni las personas ni los sistemas de seguridad son infalibles, incluidos los sistemas de cifrado. Además, las personas pueden cometer delitos intencionales, cometer errores o no seguir las políticas. Por lo tanto, aunque hacemos todos los esfuerzos razonables para proteger su información personal, no podemos garantizar su seguridad absoluta. Si la ley aplicable impone algún deber irrenunciable de proteger su información personal, usted acepta que la mala conducta intencional serán los estándares utilizados para medir nuestro cumplimiento con ese deber.</p>\n
+
+\n<big><b>¿Puedo actualizar o corregir mi información?</b></big>\n
+<p>La información ingresada anteriormente se reinicia al utilizar la plataforma, de modo que debe ingresar siempre su información más actual.</p>\n
+
+\n<big><b>Personal</b></big>\n
+<p>Si es un trabajador o solicitante de NutriGreen, recopilamos la información que nos proporciona voluntariamente. Usamos la información recopilada con fines de recursos humanos para administrar los beneficios a los trabajadores y seleccionar a los solicitantes.</p>\n
+
+<p>Puede comunicarse con nosotros para (1) actualizar o corregir su información, (2) cambiar sus preferencias con respecto a las comunicaciones y otra información que reciba de nosotros, o (3) recibir un registro de la información que tenemos relacionada con usted. Dichas actualizaciones, correcciones, cambios y eliminaciones no tendrán ningún efecto sobre otra información que mantenemos o información que hayamos proporcionado a terceros de acuerdo con esta Política de privacidad antes de dicha actualización, corrección, cambio o eliminación.</p>\n
+
+\n<big><b>¿Cuánto tiempo conservamos su información?</b></big>\n
+<p>Conservamos su información solo mientras la necesitemos para proporcionarle NutriGreen y cumplir con los propósitos descritos en esta política. Este también es el caso de cualquier persona con la que compartamos su información y que lleve a cabo servicios en nuestro nombre. Cuando ya no necesitemos usar su información y no sea necesario que la conservemos para cumplir con nuestras obligaciones legales o reglamentarias, la eliminaremos de nuestros sistemas o la despersonalizaremos para que no podamos identificarlo.</p>\n
+
+\n<big><b>¿Cómo protegemos su información?</b></big>\n
+<p>Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido, ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información confidencial / crediticia suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago solo para que sea accesible por aquellos autorizados con derechos especiales de acceso a dichos sistemas, y deben mantener la información confidencial. Después de una transacción, su información privada (tarjetas de crédito, números de seguro social, finanzas, etc.) nunca se archiva. Sin embargo, no podemos garantizar la seguridad absoluta de la información que transmita a NutriGreen ni garantizar que su información en el servicio no sea accedida, divulgada, alterada o destruida por una infracción de cualquiera de nuestras condiciones físicas, salvaguardias técnicas o de gestión.</p>\n
+
+\n<big><b>Ley que Rige</b></big>\n
+<p>Esta Política de privacidad se rige por las leyes de México sin tener en cuenta su disposición sobre conflicto de leyes. Usted acepta la jurisdicción exclusiva de los tribunales en relación con cualquier acción o disputa que surja entre las partes en virtud de esta Política de privacidad o en relación con ella, excepto aquellas personas que puedan tener derecho a presentar reclamaciones en virtud del Escudo de privacidad o el marco suizo-estadounidense.</p>\n
+
+\n<big><b>Tu consentimiento</b></big>\n
+<p>Hemos actualizado nuestra Política de privacidad para brindarle total transparencia sobre lo que se establece cuando visita nuestro sitio y cómo se utiliza. Al utilizar nuestra plataforma, registrar una cuenta o realizar una compra, por la presente acepta nuestra Política de privacidad y acepta sus términos.</p>\n
+
+\n<big><b>Enlaces a otros Sitios Web</b></big>\n
+<p>Esta Política de privacidad se aplica solo a los Servicios. Los Servicios pueden contener enlaces a otros sitios web que NutriGreen no opera ni controla. No somos responsables por el contenido, la precisión o las opiniones expresadas en dichos sitios web, y dichos sitios web no son investigados, monitoreados o verificados por nuestra precisión o integridad. Recuerde que cuando utiliza un enlace para ir desde los Servicios a otro sitio web, nuestra Política de privacidad deja de estar en vigor. Su navegación e interacción en cualquier otro sitio web, incluidos aquellos que tienen un enlace en nuestra plataforma, están sujetos a las propias reglas y políticas de ese sitio web. Dichos terceros pueden utilizar sus propias cookies u otros métodos para recopilar información sobre usted.</p>\n
+
+\n<big><b>Publicidad</b></big>\n
+<p>Esta plataforma puede contener anuncios de terceros y enlaces a sitios de terceros. NutriGreen no hace ninguna representación en cuanto a la exactitud o idoneidad de la información contenida en esos anuncios o sitios y no acepta ninguna responsabilidad u obligación por la conducta o el contenido de esos anuncios y sitios y las ofertas realizadas por los terceros.</p>\n
+
+\n<big><b>Privacidad de los Niños</b></big>\n
+<p>No nos dirigimos a ninguna persona menor de 13 años. No recopilamos información de identificación personal de ninguna persona menor de 13 años. Si usted es padre o tutor y sabe que su hijo nos ha proporcionado Datos personales, comuníquese con Nosotros. Si nos damos cuenta de que hemos recopilado datos personales de cualquier persona menor de 13 años sin la verificación del consentimiento de los padres, tomamos medidas para eliminar esa información de nuestros servidores.</p>\n
+
+\n<big><b>Cambios en nuestra Política de Privacidad</b></big>\n
+<p>Podemos cambiar nuestro Servicio y nuestras políticas, y es posible que debamos realizar cambios en esta Política de privacidad para que reflejen con precisión nuestro Servicio y nuestras políticas. A menos que la ley exija lo contrario, le notificaremos (por ejemplo, a través de nuestro Servicio) antes de realizar cambios en esta Política de privacidad y le daremos la oportunidad de revisarlos antes de que entren en vigor. Luego, si continúa utilizando el Servicio, estará sujeto a la Política de privacidad actualizada. Si no desea aceptar esta o cualquier Política de privacidad actualizada, puede eliminar su cuenta.</p>\n
+
+\n<big><b>Servicios de terceros</b></big>\n
+<p>Podemos mostrar, incluir o poner a disposición contenido de terceros (incluidos datos, información, aplicaciones y otros servicios de productos) o proporcionar enlaces a sitios web o servicios de terceros ("Servicios de terceros").</p>\n
+
+<p>Usted reconoce y acepta que NutriGreen no será responsable de ningún Servicio de terceros, incluida su precisión, integridad, puntualidad, validez, cumplimiento de los derechos de autor, legalidad, decencia, calidad o cualquier otro aspecto de estos. NutriGreen no asume ni tendrá ninguna obligación o responsabilidad ante usted o cualquier otra persona o entidad por los Servicios de terceros. Los Servicios de terceros y los enlaces a los mismos se brindan únicamente para su conveniencia y usted accede a ellos y los usa completamente bajo su propio riesgo y sujeto a los términos y condiciones de dichos terceros.</p>\n
+
+\n<big><b>Contáctenos</b></big>\n
+<P>No dude en contactarnos si tiene alguna pregunta.</P>\n
+
+<p>A través de correo electrónico: anatum.systems.consultas@gmail.com</p>\n
+    </string>
+    <string name="descargoderesponsabilidad"><big><big><b>Descargo de Responsabilidad</b></big></big>\n
+<p>Actualizado el 07/12/2022</p>\n
+\n
+<P>Anatum Systems por la presente le otorga acceso a NutriGreen y lo invita a utilizar los servicios que se ofrecen en la aplicación</P>\n
+
+\n<big><b>Definiciones y términos clave</b></big>\n
+<P>Para ayudar a explicar las cosas de la manera más clara posible en este Descargo de Responsabilidad, cada vez que se hace referencia a cualquiera de estos términos, se definen estrictamente como:</P>\n
+
+<P><b>Cookie: </b>Pequeña cantidad de datos generados por un sitio web y guardados por su navegador web. Se utiliza para identificar su navegador, proporcionar análisis, recordar información sobre usted, como su preferencia de idioma o información de inicio de sesión.</P>\n
+
+<P><b>Compañía: </b>cuando estos términos mencionan "Compañía", "nosotros", "nos" o "nuestro", se refiere a Anatum Systems, que es responsable de su información en virtud de estos Términos y Condiciones.</P>\n
+
+<P><b>Plataforma: </b>sitio web de Internet, aplicación web o aplicación digital de cara al público de NutriGreen</P>\n
+
+<P><b>País: </b>donde se encuentra NutriGreen o los propietarios / fundadores de NutriGreen en este caso es México.</P>\n
+
+<P><b>Dispositivo: </b>cualquier dispositivo conectado a Internet, como un teléfono, tablet, computadora o cualquier otro dispositivo que se pueda usar para utilizar NutriGreen y usar los servicios.</P>\n
+
+<P><b>Servicio: </b>se refiere al servicio brindado por NutriGreen como se describe en los términos relativos (si están disponibles) y en esta plataforma.</P>\n
+
+<P><b>Terceros: </b>se refiere a anunciantes, patrocinadores de concursos, socios promocionales y de marketing, y otros que brindan nuestro contenido o cuyos productos o servicios que creemos que pueden interesarle.</P>\n
+
+<p><b>Sitio web: </b>el sitio de NutriGreen, al que se puede acceder a través de esta URL: https://noritech.000webhostapp.com/</p>\n
+
+<P><b>Usted: </b>una persona o entidad que está registrada con NutriGreen para utilizar los Servicios.</P>\n
+
+\n<big><b>De Responsabilidad Limitada</b></big>\n
+<P>NutriGreen se esfuerza por actualizar y / o complementar el contenido de la plataforma de forma regular. A pesar de nuestro cuidado y atención, el contenido puede estar incompleto y / o incorrecto.</P>\n
+
+<P>Los materiales ofrecidos en la plataforma se ofrecen sin ningún tipo de garantía o reclamo de su exactitud. Estos materiales se pueden cambiar en cualquier momento sin previo aviso de NutriGreen.</P>\n
+
+<P>En particular, todos los precios en la plataforma están sujetos a errores de escritura y programación. No se asume ninguna responsabilidad por las implicaciones de tales errores. No se concluye ningún acuerdo sobre la base de tales errores.</P>\n
+
+<P>NutriGreen no asumirá ninguna responsabilidad por los hipervínculos a sitios web o servicios de terceros incluidos en la plataforma. Desde nuestra plataforma, puede visitar otros sitios web siguiendo los hipervínculos a dichos sitios externos. Si bien nos esforzamos por proporcionar solo enlaces de calidad a sitios web útiles y éticos, no tenemos control sobre el contenido y la naturaleza de estos sitios. Estos enlaces a otros sitios web no implican una recomendación para todo el contenido que se encuentra en estos sitios. Los propietarios del sitio y el contenido pueden cambiar sin previo aviso y pueden ocurrir antes de que tengamos la oportunidad de eliminar un enlace que puede haber fallado.</P>\n
+
+<P>También tenga en cuenta que cuando abandona nuestra plataforma, otros sitios pueden tener diferentes políticas y términos de privacidad que no están a nuestro control. Asegúrese de consultar las Políticas de privacidad de estos sitios, así como sus "Términos de servicio" antes de participar en cualquier negocio o cargar cualquier información.</P>\n
+
+\n<big><b>Descargo de Responsabilidad por Errores y Omisiones</b></big>\n
+<P>NutriGreen no es responsable de ningún contenido, código o cualquier otra imprecisión.</P>\n
+
+<P>NutriGreen no ofrece garantías.</P>\n
+
+<P>En ningún caso NutriGreen será responsable de ningún daño especial, directo, indirecto, consecuente o incidental o de cualquier daño, ya sea en una acción contractual, negligencia u otro agravio, que surja de o en conexión con el uso del Servicio o el contenido del Servicio. NutriGreen se reserva el derecho de realizar adiciones, eliminaciones o modificaciones al contenido del Servicio en cualquier momento sin previo aviso.</P>\n
+
+\n<big><b>Descargo de Responsabilidad de Copyright</b></big>\n
+<P>Todos los derechos de propiedad intelectual relacionados con estos materiales pertenecen a NutriGreen. No se permite la copia, distribución y cualquier otro uso de estos materiales sin el permiso por escrito de NutriGreen, excepto y solo en la medida en que se disponga lo contrario en las regulaciones de la ley obligatoria (como el derecho a citar), a menos que se indique lo contrario ciertos materiales.</P>\n
+
+\n<big><b>Descargo de Responsabilidad General</b></big>\n
+<P>El Servicio NutriGreen y su contenido se proporcionan "tal cual" y "según esté disponible" sin ninguna garantía o representación de ningún tipo, ya sea expresa o implícita. NutriGreen es un distribuidor y no un editor del contenido proporcionado por terceros; como tal, NutriGreen no ejerce ningún control editorial sobre dicho contenido y no ofrece ninguna garantía o representación en cuanto a la precisión, confiabilidad o vigencia de cualquier información, contenido, servicio o mercancía proporcionada o accesible a través del Servicio de NutriGreen . Sin limitar lo anterior, NutriGreen renuncia específicamente a todas las garantías y representaciones en cualquier contenido transmitido en conexión con el Servicio NutriGreen o en sitios que pueden aparecer como enlaces en el Servicio de NutriGreen, o en los productos proporcionados como parte o en relación con el Servicio de NutriGreen, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito particular o no infracción de derechos de terceros. Ningún consejo oral o información escrita proporcionada por NutriGreen o cualquiera de sus afiliados, empleados, funcionarios, directores, agentes o similares creará una garantía. La información sobre precios y disponibilidad está sujeta a cambios sin previo aviso. Sin limitar lo anterior, NutriGreen no garantiza que el Servicio de NutriGreen sea ininterrumpido, sin corrupción, oportuno o sin errores.</P>\n
+
+\n<big><b>Divulgación de Afiliados</b></big>\n
+<P>NutriGreen tiene enlaces de afiliados y en esta sección del Descargo de responsabilidad abordaremos cómo usamos esos enlaces de afiliados de otros sitios web / empresas y productos. Estos "enlaces de afiliados" son URL específicas que contienen la identificación o el nombre de usuario del afiliado.</P>\n
+
+<P>De acuerdo con las pautas de la FTC, asuma lo siguiente sobre los enlaces y publicaciones en este sitio:</P>\n
+
+<P>- Todos o cualquiera de los enlaces de NutriGreen son enlaces de afiliados de los cuales recibimos una pequeña comisión por las ventas de ciertos artículos, pero el precio es el mismo para ti. A medida que NutriGreen ha crecido, también lo han hecho los costos asociados con su funcionamiento y mantenimiento, y los enlaces de afiliados son una forma en que ayudamos a compensar estos costos.</P>\n
+
+<P>- Si publicamos un enlace de afiliado a un producto, es algo que usamos, apoyamos y recomendaríamos personalmente sin un enlace de afiliado.</P>\n
+
+<P>- A menos que se indique lo contrario, todas las reseñas son de artículos que hemos comprado y no se nos paga ni compensa de ninguna manera.</P>\n
+
+<P>Podríamos participar en programas de afiliados como:</P>\n
+
+<P>- Otros</P>\n
+
+\n<big><b>Divulgación de Salud</b></big>\n
+<P>La información de esta plataforma, como texto, gráficos, imágenes y otros materiales creados por NutriGreen u obtenidos de los licenciantes de NutriGreen, y otros materiales contenidos en NutriGreen ( colectivamente, "contenido") está destinado únicamente a fines informativos y no se puede utilizar como sustituto de asesoramiento o información profesional, ya que las circunstancias variarán de persona a persona. No debe actuar ni confiar en esta información sin buscar asesoramiento profesional. No intente ninguna de las acciones, soluciones, remedios o instrucciones sugeridas que se encuentran en esta plataforma sin antes consultar con un profesional calificado. Los materiales no están destinados a ser ni constituyen un consejo profesional procesable. Las transmisiones de esta información no tienen la intención de crear una relación profesional-cliente entre NutriGreen y usted. Los propietarios, editores, colaboradores, administradores y otro personal de NutriGreen no son profesionales calificados y simplemente están agregando información que se encuentra en línea solo con fines informativos. </P>\n
+
+<P>Si cree que puede tener una emergencia médica, llame a su médico o al 911 de inmediato. NutriGreen no recomienda ni respalda ninguna prueba, médico, producto, procedimiento, opinión u otra información específica que pueda mencionarse en la plataforma. La confianza en cualquier información proporcionada por NutriGreen, los empleados de NutriGreen, otras personas que aparecen en la plataforma por invitación de NutriGreen u otros visitantes de la plataforma es únicamente bajo tu propio riesgo.</P>\n
+
+
+\n<big><b>Divulgación de Aptitud Física</b></big>\n
+<P>Lea esta Divulgación de Aptitud Física antes de aplicar cualquier información en la plataforma.</P>\n
+
+<P>Mostramos información sobre fitness y consejos nutricionales. La información de esta plataforma, como texto, gráficos, imágenes y otros materiales creados por NutriGreen u obtenidos de los licenciantes de NutriGreen, y otros materiales contenidos en NutriGreen (colectivamente, "contenido") está destinado únicamente a fines informativos y no se puede utilizar como sustituto de asesoramiento o información profesional, ya que las circunstancias variarán de persona a persona. No debe actuar ni confiar en esta información sin buscar asesoramiento profesional. No intente ninguna de las acciones, soluciones, remedios o instrucciones sugeridas que se encuentran en esta plataforma sin antes consultar con un profesional calificado. Los materiales no están destinados a ser ni constituyen un consejo profesional procesable. Si utiliza la información que proporcionamos en NutriGreen es bajo su propio riesgo.</P>\n
+
+<P>El ejercicio regular no siempre está exento de riesgos, incluso para las personas sanas. Ciertos tipos de ejercicio son más riesgosos gracias a otros y todo ejercicio es arriesgado para algunas personas.</P>\n
+
+<P>Lo mismo ocurre con la dieta. Algunas recomendaciones dietéticas son saludables para la mayoría de las personas, pero potencialmente peligrosas para otras.</P>\n
+
+<P>Usted es responsable de su propia salud y seguridad en todo momento. Como tal, al visitar y utilizar esta plataforma, reconoce y acepta que ha sido evaluado por un profesional médico calificado (es decir, su médico) que le ha dado su consentimiento para participar en la actividad física.</P>\n
+
+<P>Los ejercicios proporcionados por NutriGreen son solo para fines educativos y de entretenimiento, y no deben interpretarse como una recomendación para un plan de tratamiento, producto o curso de acción específico. El ejercicio no está exento de riesgos, y este o cualquier otro programa de ejercicios puede provocar lesiones. Incluyen, entre otros: riesgo de lesión, agravamiento de una afección preexistente o efecto adverso o sobreesfuerzo, como tensión muscular, presión arterial anormal, desmayos, trastornos del ritmo cardíaco y casos muy raros de ataque cardíaco. Para reducir el riesgo de lesiones, antes de comenzar este o cualquier programa de ejercicios, consulte a un proveedor de atención médica para conocer las precauciones de seguridad y la prescripción de ejercicios adecuados. Las instrucciones de ejercicio y los consejos presentados no sustituyen de ninguna manera la consulta médica. NutriGreen no asume ninguna responsabilidad en relación con este programa. Al igual que con cualquier programa de ejercicio, si en algún momento durante su entrenamiento comienza a sentirse débil, mareado o tiene molestias físicas, debe detenerse inmediatamente y consultar a un médico.</P>\n
+
+\n<big><b>Su consentimiento</b></big>\n
+<P>Hemos actualizado nuestro Descargo de Responsabilidad para brindarle total transparencia sobre lo que se establece cuando visita nuestro sitio y cómo se utiliza. Al utilizar nuestra plataforma, registrar una cuenta o realizar una compra, por la presente acepta nuestro Descargo de Responsabilidad y acepta sus términos.</P>\n
+
+\n<big><b>Cambios en nuestro Descargo de Responsabilidad</b></big>\n
+<P>Podemos actualizar, enmendar o realizar cambios en este documento para que reflejen con precisión nuestro Servicio y nuestras políticas. A menos que la ley exija lo contrario, esos cambios se publicarán de manera destacada aquí. Luego, si continúa utilizando el Servicio, estará sujeto al Descargo de responsabilidad actualizado. Si no desea aceptar este o cualquier descargo de responsabilidad actualizado, puede eliminar su cuenta.</P>\n
+
+\n<big><b>Contáctenos</b></big>\n
+<P>No dude en contactarnos si tiene alguna pregunta.</P>\n
+
+<p>A través de correo electrónico: anatum.systems.consultas@gmail.com</p>\n
+    </string>
 </resources>

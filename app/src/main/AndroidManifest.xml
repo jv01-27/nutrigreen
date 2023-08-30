@@ -10,9 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NutriGreen">
         <activity
-            android:name=".alimento"
+            android:name=".menu_resultado"
             android:exported="false"
             android:theme="@style/Theme.NutriGreen.NoActionBar"/>
+        <activity
+            android:name=".legal"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
+        <activity
+            android:name=".nag"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
+        <activity
+            android:name=".choice"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
+        <activity
+            android:name=".menu_selection"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
+        <activity
+            android:name=".historial"
+            android:exported="false" />
+        <activity
+            android:name=".alimento"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
         <activity
             android:name=".entrada_datos"
             android:exported="true"
