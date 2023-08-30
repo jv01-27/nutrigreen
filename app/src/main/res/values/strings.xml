@@ -1,8 +1,89 @@
 <resources>
     <string name="app_name">NutriGreen</string>
 
-    <string-array name="fruits">
+    <string-array name="sex">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
 
+    <string-array name="diabetes">
+        <item>Tipo 2</item>
+    </string-array>
+
+    <string-array name="edad">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="trabajos">
+        <item>Ligero</item>
+        <item>Activo</item>
+        <item>Muy Activo</item>
+    </string-array>
+
+    <string-array name="deportes">
+        <item>Correr</item>
+        <item>Tenis</item>
+        <item>Fútbol</item>
+        <item>Básquetbol</item>
+        <item>Ciclismo</item>
+        <item>Montañismo</item>
+        <item>Natación</item>
+        <item>Cabalgata</item>
+    </string-array>
+
+    <string-array name="fruits">
         <item>Arándano</item>
         <item>Chabacano</item>
         <item>Chirimoya</item>
@@ -170,10 +251,15 @@
         <item>Yogurt bebible bajo en grasa y azúcar</item>
         <item>Yogurt natural</item>
         <item>Yogurt bebible con fruta</item>
+        <item>¡No consumo lácteos!</item>
     </string-array>
     <string name="adv1">Si usted decide tomar alcohol, reduzca la cantidad y hágalo con un alimento. Consulte con su proveedor de atención médica sobre la forma como el alcohol afectará su azúcar en la sangre y para determinar una cantidad segura para usted.</string>
     <string name="adv2">Los dulces son ricos en grasa y azúcar. Mantenga los tamaños de las porciones pequeños.</string>
     <string name="adv3">Coma dulces que no tengan azúcar.</string>
-    <string name="raciones">Las raciones por día que puede consumir de los alimentos seleccionados se muestran en la siguiente lista:</string>
+    <string name="raciones">Las raciones por comida que puede consumir de los alimentos seleccionados se muestran en la siguiente lista:</string>
     <string name="nota1">Nota:  Una taza equivale aproximadamente as 250 ml</string>
+    <string name="title_activity_entrada_datos">entrada_datos</string>
+    <string name="hyperlink">Al hacer clic en "Siguiente", usted expresa estar de acuerdo con lo establecido en nuestros <a href="https://noritech.000webhostapp.com/">Términos y Condiciones</a></string>
+    <string name="hyperlink2"><a href="https://noritech.000webhostapp.com/">Legal</a></string>
+    <string name="hyperlink3"><a href="https://tiny.one/paypal-donation">Donación</a></string>
 </resources>

@@ -10,14 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NutriGreen">
         <activity
-            android:name=".entrada"
-            android:exported="false" />
+            android:name=".alimento"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar"/>
+        <activity
+            android:name=".entrada_datos"
+            android:exported="true"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
         <activity
             android:name=".results"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
+        <activity
+            android:name=".creditos"
+            android:exported="false"
+            android:theme="@style/Theme.NutriGreen.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.NutriGreen.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
