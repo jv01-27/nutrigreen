@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">NutriGreen</string>
+
+    <string-array name="fruits">
+
+        <item>Arándano</item>
+        <item>Chabacano</item>
+        <item>Chirimoya</item>
+        <item>Ciruela</item>
+        <item>Ciruela pasa deshuesada</item>
+        <item>Durazno (chico)</item>
+        <item>Frambuesa</item>
+        <item>Fresa rebanada</item>
+        <item>Gajos de mandarina, toronja y naranja</item>
+        <item>Granada china</item>
+        <item>Granada roja</item>
+        <item>Guanábana</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lichis</item>
+        <item>Lima</item>
+        <item>Mamey</item>
+        <item>Mandarina (chica)</item>
+        <item>Mango ataulfo</item>
+        <item>Mango petacón</item>
+        <item>Manzana (chica)</item>
+        <item>Melón picado</item>
+        <item>Naranja</item>
+        <item>Papaya picada</item>
+        <item>Pasas</item>
+        <item>Pera</item>
+        <item>Piña picada</item>
+        <item>Plátano macho</item>
+        <item>Plátano tabasco</item>
+        <item>Sandía picada</item>
+        <item>Toronja</item>
+        <item>Tuna</item>
+        <item>Uva roja o verde</item>
+        <item>Zapote negro</item>
+        <item>Zarzamora</item>
+    </string-array>
+
+    <string-array name="veg">
+
+        <item>Acelga cocida</item>
+        <item>Acelga cruda</item>
+        <item>Champiñón cocido rebanado</item>
+        <item>Ejotes cocidos picados</item>
+        <item>Espinaca cocida</item>
+        <item>Flor de calabaza cocida</item>
+        <item>Huitlacoche cocido</item>
+        <item>Lechuga</item>
+        <item>Nabo</item>
+        <item>Nopal Cocido</item>
+        <item>Papaloquelite</item>
+        <item>Pepino rebanado</item>
+        <item>Pimiento morrón (rojo, amarillo, verde)</item>
+        <item>Rábano</item>
+        <item>Salsa mexicana, pico de gallo, taquera, roja o verde</item>
+        <item>Setas cocidas</item>
+        <item>Berro cocido</item>
+        <item>Brócoli cocido</item>
+        <item>Calabacita cocida</item>
+        <item>Chayote cocido</item>
+        <item>Jicama picada</item>
+        <item>Puré de tomate</item>
+        <item>Quelite</item>
+        <item>Romeritos cocidos</item>
+        <item>Zanahoria Picada o rallada</item>
+    </string-array>
+
+    <string-array name="carb">
+
+        <item>Avena en hojuelas</item>
+        <item>Avena Cocida</item>
+        <item>Barrita de granola o avena</item>
+        <item>Bolillo sin migajón</item>
+        <item>Cereal de caja con azúcar</item>
+        <item>Cereal de caja sin azúcar</item>
+        <item>Crepas</item>
+        <item>Galleta de animalitos</item>
+        <item>Galleta María</item>
+        <item>Galleta salada</item>
+        <item>Hot cake (1 pieza chica)</item>
+        <item>Maíz (blanco, cacahuazintle, palomero)</item>
+        <item>Palitos de pan</item>
+        <item>Palomitas naturales</item>
+        <item>Pan de caja (blanco, integral, multigrano)</item>
+        <item>Pan tostado</item>
+        <item>Papa (hervida o al horno)</item>
+        <item>Tlacoyo (sin freír)</item>
+        <item>Tortilla de maíz</item>
+        <item>Tortilla de maíz azul</item>
+        <item>Tortilla de harina</item>
+    </string-array>
+
+    <string-array name="prot">
+
+        <item>Almeja fresca</item>
+        <item>Atún en agua</item>
+        <item>Agujas de res</item>
+        <item>Arrachera</item>
+        <item>Atún en aceite</item>
+        <item>Bagre</item>
+        <item>Barbacoa Maciza</item>
+        <item>Bistec de ternera</item>
+        <item>Bistec de res</item>
+        <item>Cabeza de pescado</item>
+        <item>Cabrito</item>
+        <item>Calamar </item>
+        <item>Camarón cocido</item>
+        <item>Cangrejo</item>
+        <item>Carne de avestruz</item>
+        <item>Carne de jaiba</item>
+        <item>Carne de res seca</item>
+        <item>Carne molida de pollo y pavo</item>
+        <item>Carne de cerdo</item>
+        <item>Carpa cocida</item>
+        <item>Cecina</item>
+        <item>Conejo</item>
+        <item>Charales frescos</item>
+        <item>Charales secos</item>
+        <item>Clara de huevo</item>
+        <item>Escalopa de res</item>
+        <item>Escamoles</item>
+        <item>Fajitas de pollo sin piel</item>
+        <item>Falda de res</item>
+        <item>Filete de Huachinango</item>
+        <item>Filete de pescado, mero, mojarra, merluza</item>
+        <item>Filete de res y tampiqueña</item>
+        <item>Huachinango</item>
+        <item>Huevo</item>
+        <item>Jaiba cocida entera</item>
+        <item>Liebre</item>
+        <item>Longaniza</item>
+        <item>Maciza de res</item>
+        <item>Medallón de filete de res</item>
+        <item>Mejillones</item>
+        <item>Milanesa de pollo y res</item>
+        <item>Molida de pollo</item>
+        <item>Molleja de pollo</item>
+        <item>Muslo de pollo sin piel</item>
+        <item>Pancita de res</item>
+        <item>Pata de res</item>
+        <item>Pechuga a la plancha, asada, cocida</item>
+        <item>Pechuga de pavo</item>
+        <item>Pechuga de pollo deshuesada</item>
+        <item>Pescado en trozo</item>
+        <item>Pierna de pollo sin piel</item>
+        <item>Puntas de res</item>
+        <item>Queso cottage</item>
+        <item>Salami de pavo</item>
+        <item>Salchicha de cerdo</item>
+        <item>Salchicha de pavo</item>
+        <item>Sardina en aceite</item>
+        <item>Sardina en tomate</item>
+        <item>Suadero</item>
+        <item>Surimi</item>
+        <item>Tampiqueña</item>
+        <item>Venado cocido</item>
+    </string-array>
+
+    <string-array name="lac">
+
+        <item>Leche de soya baja en grasa</item>
+        <item>Leche descremada</item>
+        <item>Leche entera</item>
+        <item>Leche liconsa liquida</item>
+        <item>Yogurt light</item>
+        <item>Yogurt bebible bajo en grasa y azúcar</item>
+        <item>Yogurt natural</item>
+        <item>Yogurt bebible con fruta</item>
+    </string-array>
+    <string name="adv1">Si usted decide tomar alcohol, reduzca la cantidad y hágalo con un alimento. Consulte con su proveedor de atención médica sobre la forma como el alcohol afectará su azúcar en la sangre y para determinar una cantidad segura para usted.</string>
+    <string name="adv2">Los dulces son ricos en grasa y azúcar. Mantenga los tamaños de las porciones pequeños.</string>
+    <string name="adv3">Coma dulces que no tengan azúcar.</string>
+    <string name="raciones">Las raciones por día que puede consumir de los alimentos seleccionados se muestran en la siguiente lista:</string>
+    <string name="nota1">Nota:  Una taza equivale aproximadamente as 250 ml</string>
+</resources>
