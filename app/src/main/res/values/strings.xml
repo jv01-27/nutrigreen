@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NutriGreen v3.0</string>
+    <string name="app_name">NutriGreen v4.0</string>
 
     <string-array name="sex">
         <item>Masculino</item>
@@ -126,7 +126,7 @@
         <item>Zapote negro</item>
         <item>Zarzamora</item>
     </string-array>
-    <!--
+
     <string-array name="veg">
         <item>Acelga cocida</item>
         <item>Acelga cruda</item>
@@ -255,7 +255,75 @@
         <item>Yogurt bebible con fruta</item>
         <item>¡No consumo lácteos!</item>
     </string-array>
--->
+
+    <string-array name="leg">
+        <item>Alubias, garbanzos, habas, lentejas cocidas</item>
+        <item>Alverjón</item>
+        <item>Frijol canario, negro cocido</item>
+        <item>Soya cocida</item>
+        <item>Soya texturizada seca</item>
+        </string-array>
+
+    <string-array name="gras">
+        <item>Aceituna negra</item>
+        <item>Aceituna verde</item>
+        <item>Aguacate</item>
+        <item>Ajonjolí</item>
+        <item>Almendras</item>
+        <item>Avellana</item>
+        <item>Cacahuates</item>
+        <item>Cacahuates con cáscara</item>
+        <item>Guacamole</item>
+        <item>Mayonesa</item>
+        <item>Nuez</item>
+        <item>Nuez de Ia india</item>
+        <item>Pistaches</item>
+        <item>Aceite de canola, soya, oliva</item>
+        <item>Aceite de girasol, maíz, cártamo</item>
+        <item>Aceite en spray</item>
+        <item>Pepitas sin cáscara</item>
+        <item>Piñón</item>
+    </string-array>
+
+    <string-array name="energiant">
+        <item>Achiote</item>
+        <item>Agua mineral</item>
+        <item>Ajo en</item>
+        <item>Alcaparras**</item>
+        <item>Café americano descafeinado</item>
+        <item>Caldo de pollo / res, desgrasado**</item>
+        <item>Canela en polvo</item>
+        <item>Chicles sin azúcar</item>
+        <item>Chile en polvo</item>
+        <item>Cocoa en polvo, con sustituto de azúcar</item>
+        <item>Consomé de pollo /res /camarón en polvo**</item>
+        <item>Eneldo</item>
+        <item>Flor de jamaica</item>
+        <item>Gelatina baja en calorías</item>
+        <item>Hierbabuena</item>
+        <item>Hierbas de olor</item>
+        <item>Hojas de laurel</item>
+        <item>Limón</item>
+        <item>Manzanilla</item>
+        <item>Mejorana</item>
+        <item>Mostaza</item>
+        <item>Orégano</item>
+        <item>Pimienta</item>
+        <item>Refrescos de dieta</item>
+        <item>Romero</item>
+        <item>Sal de ajo* *</item>
+        <item>Salsa de barbecue</item>
+        <item>Salsa de soya* *</item>
+        <item>Salsa inglesa</item>
+        <item>Salsa Tabasco</item>
+        <item>Salsa teriyaki **</item>
+        <item>Sustituto de azúcar</item>
+        <item>Té sin azúcar (manzanilla, canela, hierba-buena, jamaica)</item>
+        <item>Tomillo</item>
+        <item>Vainilla</item>
+        <item>Vinagre</item>
+    </string-array>
+
     <string-array name="tiempo">
         <item>Seleccione</item>
         <item>Desayuno</item>
@@ -264,487 +332,22 @@
         <item>Cena</item>
     </string-array>
 
+    <string-array name="tiempo_full">
+        <item>Seleccione</item>
+        <item>Desayuno</item>
+        <item>Colación (Mañana)</item>
+        <item>Comida</item>
+        <item>Colación (Tarde)</item>
+        <item>Cena</item>
+    </string-array>
+
     <string-array name="no_select">
         <item>No ha seleccionado un tiempo</item>
     </string-array>
-    <!--
-    <string-array name="fruta_des">
-        <item>Acerola</item>
-        <item>Anona</item>
-        <item>Arándanos Frescos</item>
-        <item>Breva</item>
-        <item>Caimito Blanco</item>
-        <item>Caimito Morado</item>
-        <item>Calabaza Melón</item>
-        <item>Caña De Azúcar</item>
-        <item>Capulín</item>
-        <item>Carambolo</item>
-        <item>Cereza (Roja)</item>
-        <item>Chabacano</item>
-        <item>Chicozapote</item>
-        <item>Chirimoya</item>
-        <item>Ciricote</item>
-        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
-        <item>Ciruela Pasa En Pure, Industrializada</item>
-        <item>Ciruela Pasa Entera</item>
-        <item>Ciruela Roja</item>
-        <item>Coco (Pulpa O Copra)</item>
-        <item>Coco Rallado, Seco</item>
-        <item>Cocoyol</item>
-        <item>Coctel De Frutas</item>
-        <item>Coctel De Frutas En Almíbar, Industrializado</item>
-        <item>Coctel De Frutas, Industrializado</item>
-        <item>Dátil Seco Sin Semilla</item>
-        <item>Durazno Amarillo</item>
-        <item>Durazno Blanco</item>
-        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
-        <item>Frambuesa</item>
-        <item>Fresa</item>
-        <item>Fresas En Almíbar, Industrializadas</item>
-        <item>Frutas Secas O Deshidratadas</item>
-        <item>Fruto Del Pan</item>
-        <item>Garambullo</item>
-        <item>Granada China</item>
-        <item>Granada Roja</item>
-        <item>Guanábana Cimarrona</item>
-        <item>Guaya (Promedio)</item>
-        <item>Guayaba Amarilla (Blanca)</item>
-        <item>Guayaba Promedio</item>
-        <item>Guayaba Rosa (Manzana)</item>
-        <item>Harina De Coco</item>
-        <item>Higo</item>
-        <item>Higo En Almíbar, Industrializado</item>
-        <item>Jícama</item>
-        <item>Jinicuil Crudo (Semillas)</item>
-        <item>Jiotilla</item>
-        <item>Kiwi</item>
-        <item>Lima</item>
-        <item>Limón Agrio</item>
-        <item>Limón Real</item>
-        <item>Lichi</item>
-        <item>Mamey</item>
-        <item>Mandarina Común</item>
-        <item>Mandarina Reyna O China</item>
-        <item>Mango (Promedio)</item>
-        <item>Mango Criollo</item>
-        <item>Mango En Almíbar, Industrializado</item>
-        <item>Mango Manila</item>
-        <item>Mango Petacón</item>
-        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
-        <item>Manzana Criolla (Roja O Amarilla)</item>
-        <item>Manzana En Almíbar, Industrializada</item>
-        <item>Manzana Red Delicious</item>
-        <item>Maracuyá</item>
-        <item>Marañón Fresco</item>
-        <item>Melocotón (Prisco)</item>
-        <item>Melón Chino (Cantalupo)</item>
-        <item>Melón Promedio</item>
-        <item>Melón Valenciano</item>
-        <item>Membrillo</item>
-        <item>Nanche</item>
-        <item>Nanche Agrio</item>
-        <item>Naranja Agria</item>
-        <item>Naranja Cajera</item>
-        <item>Naranja China</item>
-        <item>Naranja Promedio</item>
-        <item>Nectarina</item>
-        <item>Níspero</item>
-        <item>Otra Fruta (Promedio)</item>
-        <item>Papaya</item>
-        <item>Pasas Golden</item>
-        <item>Pera Criolla, Dura</item>
-        <item>Pera Mantequilla</item>
-        <item>Peras En Almíbar, Industrializadas</item>
-        <item>Perón</item>
-        <item>Persimon</item>
-        <item>Piña</item>
-        <item>Piña En Almíbar, Industrializada</item>
-        <item>Pitahaya</item>
-        <item>Plátano (Promedio)</item>
-        <item>Plátano Dominico</item>
-        <item>Plátano Macho</item>
-        <item>Plátano Manzano</item>
-        <item>Plátano Morado</item>
-        <item>Plátano Tabasco</item>
-        <item>Pomarrosa</item>
-        <item>Pomelo</item>
-        <item>Pure De Manzana, Industrializado</item>
-        <item>Sandia (Ovalada)</item>
-        <item>Sandia Criolla (Redonda, Rayada)</item>
-        <item>Saramuyo</item>
-        <item>Tamarindo</item>
-        <item>Tejocote</item>
-        <item>Toronja</item>
-        <item>Tuna Cardona</item>
-        <item>Tuna Con Semilla (Promedio)</item>
-        <item>Uva (Todos Tipos)</item>
-        <item>Uva Blanca</item>
-        <item>Uva Negra</item>
-        <item>Xocoyol</item>
-        <item>Zapote Amarillo</item>
-        <item>Zapote Blanco</item>
-        <item>Zapote Borracho</item>
-        <item>Zapote Negro</item>
-        <item>Zarzamora</item>
+
+    <string-array name="no_disp">
+        <item>.</item>
     </string-array>
-    <string-array name="fruta_alm">
-        <item>Acerola</item>
-        <item>Anona</item>
-        <item>Arándanos Frescos</item>
-        <item>Breva</item>
-        <item>Caimito Blanco</item>
-        <item>Caimito Morado</item>
-        <item>Calabaza Melón</item>
-        <item>Caña De Azúcar</item>
-        <item>Capulín</item>
-        <item>Carambolo</item>
-        <item>Cereza (Roja)</item>
-        <item>Chabacano</item>
-        <item>Chicozapote</item>
-        <item>Chirimoya</item>
-        <item>Ciricote</item>
-        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
-        <item>Ciruela Pasa En Pure, Industrializada</item>
-        <item>Ciruela Pasa Entera</item>
-        <item>Ciruela Roja</item>
-        <item>Coco (Pulpa O Copra)</item>
-        <item>Coco Rallado, Seco</item>
-        <item>Cocoyol</item>
-        <item>Coctel De Frutas</item>
-        <item>Coctel De Frutas En Almíbar, Industrializado</item>
-        <item>Coctel De Frutas, Industrializado</item>
-        <item>Dátil Seco Sin Semilla</item>
-        <item>Durazno Amarillo</item>
-        <item>Durazno Blanco</item>
-        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
-        <item>Frambuesa</item>
-        <item>Fresa</item>
-        <item>Fresas En Almíbar, Industrializadas</item>
-        <item>Frutas Secas O Deshidratadas</item>
-        <item>Fruto Del Pan</item>
-        <item>Garambullo</item>
-        <item>Granada China</item>
-        <item>Granada Roja</item>
-        <item>Guanábana Cimarrona</item>
-        <item>Guaya (Promedio)</item>
-        <item>Guayaba Amarilla (Blanca)</item>
-        <item>Guayaba Promedio</item>
-        <item>Guayaba Rosa (Manzana)</item>
-        <item>Harina De Coco</item>
-        <item>Higo</item>
-        <item>Higo En Almíbar, Industrializado</item>
-        <item>Jícama</item>
-        <item>Jinicuil Crudo (Semillas)</item>
-        <item>Jiotilla</item>
-        <item>Kiwi</item>
-        <item>Lima</item>
-        <item>Limón Agrio</item>
-        <item>Limón Real</item>
-        <item>Lichi</item>
-        <item>Mamey</item>
-        <item>Mandarina Común</item>
-        <item>Mandarina Reyna O China</item>
-        <item>Mango (Promedio)</item>
-        <item>Mango Criollo</item>
-        <item>Mango En Almíbar, Industrializado</item>
-        <item>Mango Manila</item>
-        <item>Mango Petacón</item>
-        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
-        <item>Manzana Criolla (Roja O Amarilla)</item>
-        <item>Manzana En Almíbar, Industrializada</item>
-        <item>Manzana Red Delicious</item>
-        <item>Maracuyá</item>
-        <item>Marañón Fresco</item>
-        <item>Melocotón (Prisco)</item>
-        <item>Melón Chino (Cantalupo)</item>
-        <item>Melón Promedio</item>
-        <item>Melón Valenciano</item>
-        <item>Membrillo</item>
-        <item>Nanche</item>
-        <item>Nanche Agrio</item>
-        <item>Naranja Agria</item>
-        <item>Naranja Cajera</item>
-        <item>Naranja China</item>
-        <item>Naranja Promedio</item>
-        <item>Nectarina</item>
-        <item>Níspero</item>
-        <item>Otra Fruta (Promedio)</item>
-        <item>Papaya</item>
-        <item>Pasas Golden</item>
-        <item>Pera Criolla, Dura</item>
-        <item>Pera Mantequilla</item>
-        <item>Peras En Almíbar, Industrializadas</item>
-        <item>Perón</item>
-        <item>Persimon</item>
-        <item>Piña</item>
-        <item>Piña En Almíbar, Industrializada</item>
-        <item>Pitahaya</item>
-        <item>Plátano (Promedio)</item>
-        <item>Plátano Dominico</item>
-        <item>Plátano Macho</item>
-        <item>Plátano Manzano</item>
-        <item>Plátano Morado</item>
-        <item>Plátano Tabasco</item>
-        <item>Pomarrosa</item>
-        <item>Pomelo</item>
-        <item>Pure De Manzana, Industrializado</item>
-        <item>Sandia (Ovalada)</item>
-        <item>Sandia Criolla (Redonda, Rayada)</item>
-        <item>Saramuyo</item>
-        <item>Tamarindo</item>
-        <item>Tejocote</item>
-        <item>Toronja</item>
-        <item>Tuna Cardona</item>
-        <item>Tuna Con Semilla (Promedio)</item>
-        <item>Uva (Todos Tipos)</item>
-        <item>Uva Blanca</item>
-        <item>Uva Negra</item>
-        <item>Xocoyol</item>
-        <item>Zapote Amarillo</item>
-        <item>Zapote Blanco</item>
-        <item>Zapote Borracho</item>
-        <item>Zapote Negro</item>
-        <item>Zarzamora</item>
-    </string-array>
-    <string-array name="fruta_com">
-        <item>Acerola</item>
-        <item>Anona</item>
-        <item>Arándanos Frescos</item>
-        <item>Breva</item>
-        <item>Caimito Blanco</item>
-        <item>Caimito Morado</item>
-        <item>Calabaza Melón</item>
-        <item>Caña De Azúcar</item>
-        <item>Capulín</item>
-        <item>Carambolo</item>
-        <item>Cereza (Roja)</item>
-        <item>Chabacano</item>
-        <item>Chicozapote</item>
-        <item>Chirimoya</item>
-        <item>Ciricote</item>
-        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
-        <item>Ciruela Pasa En Pure, Industrializada</item>
-        <item>Ciruela Pasa Entera</item>
-        <item>Ciruela Roja</item>
-        <item>Coco (Pulpa O Copra)</item>
-        <item>Coco Rallado, Seco</item>
-        <item>Cocoyol</item>
-        <item>Coctel De Frutas</item>
-        <item>Coctel De Frutas En Almíbar, Industrializado</item>
-        <item>Coctel De Frutas, Industrializado</item>
-        <item>Dátil Seco Sin Semilla</item>
-        <item>Durazno Amarillo</item>
-        <item>Durazno Blanco</item>
-        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
-        <item>Frambuesa</item>
-        <item>Fresa</item>
-        <item>Fresas En Almíbar, Industrializadas</item>
-        <item>Frutas Secas O Deshidratadas</item>
-        <item>Fruto Del Pan</item>
-        <item>Garambullo</item>
-        <item>Granada China</item>
-        <item>Granada Roja</item>
-        <item>Guanábana Cimarrona</item>
-        <item>Guaya (Promedio)</item>
-        <item>Guayaba Amarilla (Blanca)</item>
-        <item>Guayaba Promedio</item>
-        <item>Guayaba Rosa (Manzana)</item>
-        <item>Harina De Coco</item>
-        <item>Higo</item>
-        <item>Higo En Almíbar, Industrializado</item>
-        <item>Jícama</item>
-        <item>Jinicuil Crudo (Semillas)</item>
-        <item>Jiotilla</item>
-        <item>Kiwi</item>
-        <item>Lima</item>
-        <item>Limón Agrio</item>
-        <item>Limón Real</item>
-        <item>Lichi</item>
-        <item>Mamey</item>
-        <item>Mandarina Común</item>
-        <item>Mandarina Reyna O China</item>
-        <item>Mango (Promedio)</item>
-        <item>Mango Criollo</item>
-        <item>Mango En Almíbar, Industrializado</item>
-        <item>Mango Manila</item>
-        <item>Mango Petacón</item>
-        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
-        <item>Manzana Criolla (Roja O Amarilla)</item>
-        <item>Manzana En Almíbar, Industrializada</item>
-        <item>Manzana Red Delicious</item>
-        <item>Maracuyá</item>
-        <item>Marañón Fresco</item>
-        <item>Melocotón (Prisco)</item>
-        <item>Melón Chino (Cantalupo)</item>
-        <item>Melón Promedio</item>
-        <item>Melón Valenciano</item>
-        <item>Membrillo</item>
-        <item>Nanche</item>
-        <item>Nanche Agrio</item>
-        <item>Naranja Agria</item>
-        <item>Naranja Cajera</item>
-        <item>Naranja China</item>
-        <item>Naranja Promedio</item>
-        <item>Nectarina</item>
-        <item>Níspero</item>
-        <item>Otra Fruta (Promedio)</item>
-        <item>Papaya</item>
-        <item>Pasas Golden</item>
-        <item>Pera Criolla, Dura</item>
-        <item>Pera Mantequilla</item>
-        <item>Peras En Almíbar, Industrializadas</item>
-        <item>Perón</item>
-        <item>Persimon</item>
-        <item>Piña</item>
-        <item>Piña En Almíbar, Industrializada</item>
-        <item>Pitahaya</item>
-        <item>Plátano (Promedio)</item>
-        <item>Plátano Dominico</item>
-        <item>Plátano Macho</item>
-        <item>Plátano Manzano</item>
-        <item>Plátano Morado</item>
-        <item>Plátano Tabasco</item>
-        <item>Pomarrosa</item>
-        <item>Pomelo</item>
-        <item>Pure De Manzana, Industrializado</item>
-        <item>Sandia (Ovalada)</item>
-        <item>Sandia Criolla (Redonda, Rayada)</item>
-        <item>Saramuyo</item>
-        <item>Tamarindo</item>
-        <item>Tejocote</item>
-        <item>Toronja</item>
-        <item>Tuna Cardona</item>
-        <item>Tuna Con Semilla (Promedio)</item>
-        <item>Uva (Todos Tipos)</item>
-        <item>Uva Blanca</item>
-        <item>Uva Negra</item>
-        <item>Xocoyol</item>
-        <item>Zapote Amarillo</item>
-        <item>Zapote Blanco</item>
-        <item>Zapote Borracho</item>
-        <item>Zapote Negro</item>
-        <item>Zarzamora</item>
-    </string-array>
-    <string-array name="fruta_cen">
-        <item>Acerola</item>
-        <item>Anona</item>
-        <item>Arándanos Frescos</item>
-        <item>Breva</item>
-        <item>Caimito Blanco</item>
-        <item>Caimito Morado</item>
-        <item>Calabaza Melón</item>
-        <item>Caña De Azúcar</item>
-        <item>Capulín</item>
-        <item>Carambolo</item>
-        <item>Cereza (Roja)</item>
-        <item>Chabacano</item>
-        <item>Chicozapote</item>
-        <item>Chirimoya</item>
-        <item>Ciricote</item>
-        <item>Ciruela Amarilla (Ciruela Jobo O Jundura)</item>
-        <item>Ciruela Pasa En Pure, Industrializada</item>
-        <item>Ciruela Pasa Entera</item>
-        <item>Ciruela Roja</item>
-        <item>Coco (Pulpa O Copra)</item>
-        <item>Coco Rallado, Seco</item>
-        <item>Cocoyol</item>
-        <item>Coctel De Frutas</item>
-        <item>Coctel De Frutas En Almíbar, Industrializado</item>
-        <item>Coctel De Frutas, Industrializado</item>
-        <item>Dátil Seco Sin Semilla</item>
-        <item>Durazno Amarillo</item>
-        <item>Durazno Blanco</item>
-        <item>Durazno En Almíbar (Sin Semilla), Industrializado</item>
-        <item>Frambuesa</item>
-        <item>Fresa</item>
-        <item>Fresas En Almíbar, Industrializadas</item>
-        <item>Frutas Secas O Deshidratadas</item>
-        <item>Fruto Del Pan</item>
-        <item>Garambullo</item>
-        <item>Granada China</item>
-        <item>Granada Roja</item>
-        <item>Guanábana Cimarrona</item>
-        <item>Guaya (Promedio)</item>
-        <item>Guayaba Amarilla (Blanca)</item>
-        <item>Guayaba Promedio</item>
-        <item>Guayaba Rosa (Manzana)</item>
-        <item>Harina De Coco</item>
-        <item>Higo</item>
-        <item>Higo En Almíbar, Industrializado</item>
-        <item>Jícama</item>
-        <item>Jinicuil Crudo (Semillas)</item>
-        <item>Jiotilla</item>
-        <item>Kiwi</item>
-        <item>Lima</item>
-        <item>Limón Agrio</item>
-        <item>Limón Real</item>
-        <item>Lichi</item>
-        <item>Mamey</item>
-        <item>Mandarina Común</item>
-        <item>Mandarina Reyna O China</item>
-        <item>Mango (Promedio)</item>
-        <item>Mango Criollo</item>
-        <item>Mango En Almíbar, Industrializado</item>
-        <item>Mango Manila</item>
-        <item>Mango Petacón</item>
-        <item>Manzana (Tipo Golden Delicious, Red Delicious, Gala)</item>
-        <item>Manzana Criolla (Roja O Amarilla)</item>
-        <item>Manzana En Almíbar, Industrializada</item>
-        <item>Manzana Red Delicious</item>
-        <item>Maracuyá</item>
-        <item>Marañón Fresco</item>
-        <item>Melocotón (Prisco)</item>
-        <item>Melón Chino (Cantalupo)</item>
-        <item>Melón Promedio</item>
-        <item>Melón Valenciano</item>
-        <item>Membrillo</item>
-        <item>Nanche</item>
-        <item>Nanche Agrio</item>
-        <item>Naranja Agria</item>
-        <item>Naranja Cajera</item>
-        <item>Naranja China</item>
-        <item>Naranja Promedio</item>
-        <item>Nectarina</item>
-        <item>Níspero</item>
-        <item>Otra Fruta (Promedio)</item>
-        <item>Papaya</item>
-        <item>Pasas Golden</item>
-        <item>Pera Criolla, Dura</item>
-        <item>Pera Mantequilla</item>
-        <item>Peras En Almíbar, Industrializadas</item>
-        <item>Perón</item>
-        <item>Persimon</item>
-        <item>Piña</item>
-        <item>Piña En Almíbar, Industrializada</item>
-        <item>Pitahaya</item>
-        <item>Plátano (Promedio)</item>
-        <item>Plátano Dominico</item>
-        <item>Plátano Macho</item>
-        <item>Plátano Manzano</item>
-        <item>Plátano Morado</item>
-        <item>Plátano Tabasco</item>
-        <item>Pomarrosa</item>
-        <item>Pomelo</item>
-        <item>Pure De Manzana, Industrializado</item>
-        <item>Sandia (Ovalada)</item>
-        <item>Sandia Criolla (Redonda, Rayada)</item>
-        <item>Saramuyo</item>
-        <item>Tamarindo</item>
-        <item>Tejocote</item>
-        <item>Toronja</item>
-        <item>Tuna Cardona</item>
-        <item>Tuna Con Semilla (Promedio)</item>
-        <item>Uva (Todos Tipos)</item>
-        <item>Uva Blanca</item>
-        <item>Uva Negra</item>
-        <item>Xocoyol</item>
-        <item>Zapote Amarillo</item>
-        <item>Zapote Blanco</item>
-        <item>Zapote Borracho</item>
-        <item>Zapote Negro</item>
-        <item>Zarzamora</item>
-    </string-array>
-    -->
 
     <string-array name="fruta_des">
         <item>Arándano</item>
@@ -1005,7 +608,6 @@
         <item>Zanahoria Picada o rallada</item>
     </string-array>
 
-
     <string-array name="proteina_des">
         <item>No hay alimentos Disponibles</item>
     </string-array>
@@ -1079,7 +681,6 @@
     <string-array name="proteina_cen">
         <item>No hay alimentos Disponibles</item>
     </string-array>
-
 
     <string-array name="cereales_des">
         <item>Avena en hojuelas</item>
@@ -1162,103 +763,100 @@
         <item>¡No consumo lácteos!</item>
     </string-array>
 
-    <!-- -->
+    <string name="menu1">\n\tMenú 1:\n\tDesayuno: Queso primavera \n\tComida: Bistec en chile pasilla \n\tCena: Pechuga de Pavo con Calabacitas\n</string>
+    <string name="menu2">\n\tMenú 2:\n\tDesayuno: Pollo con ejotes \n\tComida:  Arroz blanco \n\tCena: Tostadas de pata\n</string>
+    <string name="menu3">\n\tMenú 3:\n\tDesayuno: Hotcakes \n\tComida: Sopa de Tallarín \n\tCena: Atún Isleño\n</string>
+    <string name="menu4">\n\tMenú 4:\n\tDesayuno: Chayote con jamón \n\tComida: Caldo de hongos. Res con jitomate \n\tCena: Enchiladas verdes con queso\n</string>
+    <string name="menu5">\n\tMenú 5:\n\tDesayuno: Omelette de acelgas. Salsa verde \n\tComida: Arroz rojo. Salpicón de pescado \n\tCena: Alambre de pollo\n</string>
+    <string name="menu6">\n\tMenú 6:\n\tDesayuno: Sincronizadas de champiñones \n\tComida: Crema de calabacita. Pollo jugoso \n\tCena: Tostadas de tinga\n</string>
+    <string name="menu7">\n\tMenú 7:\n\tDesayuno: Cacerola de huevo \n\tComida: Coditos. Cerdo agridulce \n\tCena: Rollo de col y queso\n</string>
+    <string name="menu8">\n\tMenú 8:\n\tDesayuno: Res con nopales \n\tComida: Arroz amarillo con ejotes. Pescado al comal \n\tCena: Pechuga de pavo a la mexicana\n</string>
+    <string name="menu9">\n\tMenú 9:\n\tDesayuno: Fajita de pollo con pimiento \n\tComida: Sopa a la campesina. Bistec en salsa morena \n\tCena: Omelette de espinaca\n</string>
+    <string name="menu10">\n\tMenú 10:\n\tDesayuno: Huevo con calabacita \n\tComida: Fideos con espinacas. Cerdo en pipián \n\tCena: Pollo con poblano\n</string>
+    <string name="menu11">\n\tMenú 11:\n\tDesayuno: Tacos de jamón \n\tComida: Sopa de zanahoria. Pescado al ajillo \n\tCena: Pudin de verduras con queso\n</string>
+    <string name="menu12">\n\tMenú 12:\n\tDesayuno: Brócoli con jamón \n\tComida: Sopa de cebolla. Rollo de carne con verduras \n\tCena: Queso con verdolagas\n</string>
+    <string name="menu13">\n\tMenú 13:\n\tDesayuno: Molletes \n\tComida: Sopa de pollo. Chile ancho relleno de queso \n\tCena: Bistec entomatado\n</string>
+    <string name="menu14">\n\tMenú 14:\n\tDesayuno: Coliflor con queso \n\tComida: Sopa mixteca. Cerdo a la mexicana \n\tCena: Conchitas con huevo\n</string>
 
     <string name="m1_1">A</string>
     <string name="m1_2">B</string>
     <string name="m1_3">C</string>
     <string name="m1_4">D</string>
-    <string name="m1_5"><b><big>Desayuno</big></b>		\n
-        <b>Comida:	Queso Primavera	</b>\n
-Ingredientes - - Cantidad	\n
-Queso fresco	80 gr	\n
-Brócoli	1/2 taza	\n
-Chayote	1/4 pieza med	\n
-Cebolla	Al gusto	\n
-Aceite de oliva	3 cucharaditas	\n
-Limón	Al gusto	\n
-Pimiento	Al gusto	\n
-		\n
-        <b>Comida: 	Tortilla	</b>\n
-	Cantidad	\n
-	4 piezas med	\n
-	120 gr	\n
-		\n
-Postre:	Yogurt con fresa	\
-Ingredientes - - Cantidad	\n
-Yogurt natural descremado	3/4 taza	\n
-	180 ml	\n
-Fresa	1 taza	\n
-		\n
-<b><big>Comida</big></b>		\n
-        <b>Comida: 	Sopa de frijol	</b>\n
-Ingredientes - - Cantidad	\n
-Frijol cocido	3/4 taza	\n
-Jitomate	1/2 pieza med	\n
-Chile guajillo	Al gusto	\n
-Cebolla	Al gusto	\n
-Aceite	1 cucharadita	\n
-Epazote y ajo	Al gusto	\n
-Sal	Mínima	\n
-		\n
-        <b>Comida: 	Bistéc en chile pasilla	</b>\n
-Ingredientes - - Cantidad	\n
-Bistec de res	120 gr	\n
-Nopal limpio	2 pieza med	\n
-Chile pasilla	1 pieza med	\n
-Cebolla	Al gusto	\n
-Aceite	2 cucharaditass	\n
-Ajo	Al gusto	\n
-Sal	Mínima	\n
-		\n
-        <b>Comida: 	Ensalada de Berros	</b>\n
-Ingredientes - - Cantidad	\n
-Berro	1 taza	\n
-Aceite de oliva	1 cucharadita	\n
-Limón	Al gusto	\n
-Ajo	Al gusto	\n
-Pimienta	Al gusto	\n
-Sal	Mínima	\n
-		\n
-        <b>Comida: 	Tortilla	</b>\n
-	Cantidad	\n
-	4 piezas med	\n
-	120 gr	\n
-		\n
-Bebida: 	Agua de jamaica	\
-Ingredientes - - Cantidad	\n
-Agua	2 tazas	\n
-Jamaica	Al gusto	\n
-Endulzante artificial	Al gusto	\n
-		\n
-Postre:	Ciruela	\
-	Cantidad	\n
-	2 piezas med	\n
-		\n
-<b><big>Cena</big></b>		\n
-        <b>Comida: 	Pechuga de pavo con calabacitas	</b>\n
-Ingredientes - - Cantidad	\n
-Pechuga de pavo	64 gr	\n
-	3 rebanadas	\n
-Calabacita	1 pieza	\n
-Jitomate	1 1/2 piezas	\n
-Elote en lata	1/2 taza	\n
-Cebolla	Al gusto	\n
-Aceite	3 cucharaditas	\n
-Epazote	Al gusto	\n
-		\n
-        <b>Comida: 	Bolillo sin migajón	</b>\n
-	Cantidad	\n
-	1 pieza	\n
-		\n
-Bebida:	Leche descremada	\
-	Cantidad	\n
-	1 taza	\n
-	240 ml	\n
-		\n
-Postre:	Pera mantequilla	\
-	Cantidad	\n
-	1/2 pieza med	\n
+    <string name="m1_5_des">\n\t<b><big>Desayuno</big></b> \n
+\t<b>Queso Primavera </b>\n
+\tQueso fresco | 80 gr \n
+\tBrócoli | 1/2 taza \n
+\tChayote | 1/4 pieza med \n
+\tCebolla | Al gusto \n
+\tAceite de oliva | 3 cucharaditas \n
+\tLimón | Al gusto \n
+\tPimiento | Al gusto \n
+\n
+\t<b>Tortilla </b>\n
+\tCantidad | 4 piezas med 120 gr \n
+\n
+\t<b>Yogurt con fresa</b> \n
+\tYogurt natural descremado | 3/4 taza\n
+\tFresa | 1 taza
+\n
+</string>
+    <string name="m1_5_com">\n\t<b><big>Comida</big></b> \n
+\t<b>Sopa de frijol </b>\n
+\tFrijol cocido | 3/4 taza \n
+\tJitomate | 1/2 pieza med \n
+\tChile guajillo | Al gusto \n
+\tCebolla | Al gusto \n
+\tAceite | 1 cucharadita \n
+\tEpazote y ajo | Al gusto \n
+\tSal | Mínima \n
+\n
+\t<b>Bistéc en chile pasilla </b>\n
+\tBistec de res | 120 gr \n
+\tNopal limpio | 2 pieza med \n
+\tChile pasilla | 1 pieza med \n
+\tCebolla | Al gusto \n
+\tAceite | 2 cucharaditass \n
+\tAjo | Al gusto \n
+\tSal | Mínima \n
+\n
+\t<b>Ensalada de Berros </b>\n
+\tBerro | 1 taza \n
+\tAceite de oliva | 1 cucharadita \n
+\tLimón | Al gusto \n
+\tAjo | Al gusto \n
+\tPimienta | Al gusto \n
+\tSal | Mínima \n
+\n
+\t<b>Tortilla </b>\n
+\tCantidad | 4 piezas med 120 gr
+\n
+\t<b>Agua de jamaica</b> \n
+\tAgua | 2 tazas \n
+\tJamaica | Al gusto \n
+\tEndulzante artificial | Al gusto \n
+\n
+\t<b>Ciruela</b> \n
+\tCantidad | 2 piezas med
+\n
+</string>
+    <string name="m1_5_cen">\n\t<b><big>Cena</big></b>\n
+\t<b>Pechuga de pavo con calabacitas</b>\n
+\tPechuga de pavo 64 gr | 3 rebanadas \n
+\tCalabacita | 1 pieza \n
+\tJitomate | 1 1/2 piezas \n
+\tElote en lata 1/2 taza \n
+\tCebolla | Al gusto \n
+\tAceite | 3 cucharaditas \n
+\tEpazote | Al gusto \n
+ \n
+\t<b>Bolillo sin migajón </b>\n
+\tCantidad | 1 pieza \n
+\n
+\t<b>Leche descremada</b> \n
+\tCantidad | 1 taza 240 ml \n
+\n
+\t<b>Pera mantequilla</b> \
+\tCantidad 1/2 pieza mediana \n
 </string>
 
     <!-- -->
@@ -1278,7 +876,7 @@ Postre:	Pera mantequilla	\
 
 \n<big><b>Términos generales</b></big>\n
 
-<p>Al acceder y realizar un cálculo de dieta con NutriGreen, usted confirma que está de acuerdo y sujeto a los términos		de servicio contenidos en los Términos y condiciones que se describen a continuación. Estos términos se aplican a todo el sistema y a cualquier correo electrónico u otro tipo de comunicación entre usted y NutriGreen.</p>\n
+<p>Al acceder y realizar un cálculo de dieta con NutriGreen, usted confirma que está de acuerdo y sujeto a los términos de servicio contenidos en los Términos y condiciones que se describen a continuación. Estos términos se aplican a todo el sistema y a cualquier correo electrónico u otro tipo de comunicación entre usted y NutriGreen.</p>\n
 
 <p>En ninguna circunstancia el equipo de NutriGreen será responsable de ningún daño directo, indirecto, especial, incidental o consecuente, que incluye, entre otros, la pérdida de datos o ganancias que surjan del uso o la incapacidad de usar, los materiales de este sistema, incluso si el equipo de NutriGreen o un representante autorizado han sido informados de la posibilidad de tales daños. Si su uso de materiales de este sitio resulta en la necesidad de servicio, reparación o corrección de equipos o datos, usted asume los costos de estos.</p>\n
 <p>NutriGreen no será responsable de ningún resultado que pueda ocurrir durante el curso del uso de nuestros recursos. </p>\n

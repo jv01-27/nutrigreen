@@ -1,7 +1,11 @@
 package com.example.nutrigreen;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -70,5 +74,24 @@ public class results extends AppCompatActivity {
             adv.setText("Coma dulces que no tengan azúcar.");
         }
         */
+    }
+    public void volver (View view){
+        Intent sig = new Intent(this, alimento.class);
+        startActivity(sig);
+    }
+    public void helpResultado (View view){
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(results.this);
+        alerta.setMessage("En esta ventana puede observar las raciones de los alimentos que eligió previamente")
+                .setCancelable(true)
+                .setPositiveButton("¡Entendido!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle("Ayuda: Resultados");
+        titulo.show();
     }
 }

@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.26" />
 
     <TextView
-        android:id="@+id/txt_carbp"
+        android:id="@+id/txt_carbp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.26" />
 
     <TextView
-        android:id="@+id/txt_carbn"
+        android:id="@+id/txt_carbn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"

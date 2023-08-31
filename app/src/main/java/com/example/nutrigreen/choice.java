@@ -52,9 +52,5 @@ public class choice extends AppCompatActivity {
         AlertDialog titulo = alerta.create();
         titulo.setTitle("Ayuda: ¿Qué debería elegir?");
         titulo.show();
-
-        //unused
-        //Intent sig2 = new Intent(this, menu_resultado.class);
-        //startActivity(sig2);
     }
 }

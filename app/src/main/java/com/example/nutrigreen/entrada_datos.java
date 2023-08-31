@@ -37,6 +37,7 @@ public class entrada_datos extends AppCompatActivity{
 
     private double metabolismobasal;
     private double get;
+    private boolean validateData;
 
     /*
     private double descanso;
@@ -118,11 +119,17 @@ public class entrada_datos extends AppCompatActivity{
         // La actividad est� a punto de ser destruida.
     }
 
-    public void siguiente (View view) throws Exception {
-        Intent sig = new Intent(this, choice.class);
-        sig.putExtra("g_e_t", get());
+    public void siguiente (View view){
+        get();
+        if (validateData == true){
+            Intent sig = new Intent(this, choice.class);
+            sig.putExtra("g_e_t", get());
 
-        startActivity(sig);
+            startActivity(sig);
+        } else {
+            floatingMessage("Necesita ingresar los datos solicitados","Entendido","Error");
+        }
+
 
         //unused GET method
         /*
@@ -246,10 +253,6 @@ public class entrada_datos extends AppCompatActivity{
     }
 
     public double get () {
-        //String saltura = alturat.getText().toString();
-        //String sglucosa = glucosat.getText().toString();
-
-        //altura = Double.parseDouble(saltura);
 
         switch (sexs.getSelectedItem().toString()){
             case "Masculino":
@@ -287,6 +290,7 @@ public class entrada_datos extends AppCompatActivity{
             if(!saltura.isEmpty()){
                 age = Integer.parseInt(sage);
                 peso = Double.parseDouble(speso);
+                validateData = true;
 
                 double metbasH;
                 if (age == 18) {
@@ -301,9 +305,11 @@ public class entrada_datos extends AppCompatActivity{
                 return metbasH;
             } else {
                 alturat.setError("No ha ingresado su altura!");
+                validateData = false;
             }
         } else {
             pesot.setError("No ha ingresado su peso!");
+            validateData = false;
         }
         return 0;
     }
@@ -317,6 +323,7 @@ public class entrada_datos extends AppCompatActivity{
             if(!saltura.isEmpty()){
                 age = Integer.parseInt(sage);
                 peso = Double.parseDouble(speso);
+                validateData = true;
 
                 double metbasM;
                 if (age == 18) {
@@ -463,12 +470,17 @@ public class entrada_datos extends AppCompatActivity{
         startActivity(sig);
     }
 
-    public void floatingMessage (String message, String posittext, String title){
+    public void legal (View view){
+        Intent sig = new Intent(this, legal.class);
+        startActivity(sig);
+    }
+
+    public void floatingMessage (String message, String oktext, String title){
         AlertDialog.Builder alerta = new AlertDialog.Builder(entrada_datos.this);
         alerta.setMessage(message)
 
                 .setCancelable(true)
-                .setPositiveButton(posittext, new DialogInterface.OnClickListener() {
+                .setPositiveButton(oktext, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();

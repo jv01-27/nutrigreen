@@ -5,17 +5,48 @@
     android:id="@+id/ly"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cbe8ba"
+    android:background="@color/white"
     tools:context=".entrada_datos">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/back"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#cbe8ba"
-        android:foreground="@drawable/circle_arrow_left"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_element"
+        android:foreground="@drawable/circle_chevron_left"
         android:onClick="volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +54,11 @@
 
     <Button
         android:id="@+id/back2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#cbe8ba"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_element"
         android:foreground="@drawable/circle_check"
         android:onClick="siguiente"
         android:shadowRadius="0"
@@ -46,7 +77,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt18" />
 
@@ -61,7 +92,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt7" />
 
@@ -76,7 +107,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt6" />
 
@@ -91,7 +122,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt5" />
 
@@ -100,9 +131,9 @@
         android:layout_width="33dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:background="#FAFAFA"
+        android:background="@drawable/round_element"
         android:foreground="@android:drawable/ic_menu_help"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/in_altura"
         app:layout_constraintTop_toBottomOf="@+id/peso_help"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -112,90 +143,13 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
+        android:background="@drawable/round_element"
+        android:foreground="@drawable/circle_question"
         android:onClick="helpGlucosa"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/in_glucosa"
         app:layout_constraintTop_toBottomOf="@+id/sexo_help"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/descanso_help"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpDescanso"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/in_descanso"
-        app:layout_constraintTop_toBottomOf="@+id/txt18"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/caminar_help"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpMovimiento"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/in_movimiento"
-        app:layout_constraintTop_toBottomOf="@+id/descanso_help"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/aseop_help"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpAseoPersonal"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/in_aseop"
-        app:layout_constraintTop_toBottomOf="@+id/caminar_help"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/aseoh_help"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpTareasHogar"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/in_tareash"
-        app:layout_constraintTop_toBottomOf="@+id/aseop_help"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/trabajo_help"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpTrabajo"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_trabajo"
-        app:layout_constraintTop_toBottomOf="@+id/aseoh_help"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/trabajo_help2"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
-        android:onClick="helpDeporte"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_deporte"
-        app:layout_constraintTop_toBottomOf="@+id/trabajo_help"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/sexo_help"
@@ -204,7 +158,7 @@
         android:layout_marginTop="16dp"
         android:background="#FAFAFA"
         android:foreground="@android:drawable/ic_menu_help"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/spinner_sex"
         app:layout_constraintTop_toBottomOf="@+id/altura_help"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -216,7 +170,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:entries="@array/trabajos"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/in_tiempo_deporte"
         app:layout_constraintTop_toBottomOf="@+id/in_tareash"
         tools:ignore="TouchTargetSizeCheck" />
@@ -228,7 +182,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:entries="@array/deportes"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/in_tiempo_deporte"
         app:layout_constraintTop_toBottomOf="@+id/spinner_trabajo"
         tools:ignore="TouchTargetSizeCheck" />
@@ -244,7 +198,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt8" />
 
@@ -259,7 +213,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt20" />
 
@@ -274,7 +228,7 @@
         android:text="Indique el tiempo que realiza cada actividad física. (Horas)"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -283,34 +237,35 @@
     <TextView
         android:id="@+id/txt9"
         android:layout_width="360dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
-        android:text="Seleccione el tipo de actividad física que realiza."
+        android:text="Tipo de actividad física que realiza."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <Button
-        android:id="@+id/glucosa_help2"
+        android:id="@+id/actividadfisica_help"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#fafafa"
-        android:foreground="@android:drawable/ic_menu_help"
+        android:background="@drawable/round_element"
+        android:foreground="@drawable/circle_question"
         android:onClick="helpAF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt18"
+        app:layout_constraintTop_toBottomOf="@+id/txt9"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/txt_carbn"
+        android:id="@+id/txt_carbn1"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginLeft="16dp"
@@ -319,7 +274,7 @@
         android:text="Edad"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt" />
 
@@ -333,9 +288,9 @@
         android:text="Peso (Kg)"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_carbn" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_carbn1" />
 
     <TextView
         android:id="@+id/txt17"
@@ -347,7 +302,7 @@
         android:text="Altura (Metros)"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt16" />
 
@@ -361,7 +316,7 @@
         android:text="Sexo"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt17" />
 
@@ -376,24 +331,25 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="16sp"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt2" />
 
     <TextView
         android:id="@+id/txt"
         android:layout_width="387dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
-        android:text="Ingrese los datos que se solicitan (Todos son obligatorios)"
+        android:text="Todos son obligatorios"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <View
         android:id="@+id/divider"
@@ -416,7 +372,7 @@
         android:onClick="siguiente"
         android:text="Siguiente >>>"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -430,13 +386,13 @@
         android:onClick="volver"
         android:text="Volver"
         android:textSize="16sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spinner_sex"
-        android:layout_width="216dp"
+        android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -447,7 +403,7 @@
 
     <Spinner
         android:id="@+id/spinner_age"
-        android:layout_width="216dp"
+        android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -458,28 +414,30 @@
 
     <EditText
         android:id="@+id/in_peso"
-        android:layout_width="215dp"
+        android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Escribe tu Peso (Kg)"
         android:inputType="numberDecimal"
-        android:textSize="12sp"
+        android:text="70"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_age"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/in_altura"
-        android:layout_width="216dp"
+        android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Escribe tu Altura (Metros)"
+        android:hint="Ingrese su Altura (Metros)"
         android:inputType="numberDecimal"
-        android:textSize="12sp"
+        android:text="1.7"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_peso"
         tools:ignore="TouchTargetSizeCheck" />
@@ -494,6 +452,7 @@
         android:hint="Escribe el Resultado del Glucómetro"
         android:inputType="numberDecimal"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_sex"
         tools:ignore="TouchTargetSizeCheck" />
@@ -509,7 +468,7 @@
         android:inputType="numberDecimal"
         android:text="11"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt18"
         tools:ignore="TouchTargetSizeCheck" />
@@ -525,7 +484,7 @@
         android:inputType="numberDecimal"
         android:text="2"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_descanso"
         tools:ignore="TouchTargetSizeCheck" />
@@ -541,7 +500,7 @@
         android:inputType="numberDecimal"
         android:text="1"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_movimiento"
         tools:ignore="TouchTargetSizeCheck" />
@@ -557,7 +516,7 @@
         android:inputType="numberDecimal"
         android:text="0"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_aseop"
         tools:ignore="TouchTargetSizeCheck" />
@@ -573,7 +532,7 @@
         android:inputType="numberDecimal"
         android:text="0"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_tiempo_trabajo"
         tools:ignore="TouchTargetSizeCheck" />
@@ -589,7 +548,7 @@
         android:inputType="numberDecimal"
         android:text="8"
         android:textSize="12sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/in_tareash"
         tools:ignore="TouchTargetSizeCheck" />
@@ -601,7 +560,7 @@
         android:layout_marginTop="16dp"
         android:background="#FAFAFA"
         android:foreground="@android:drawable/ic_menu_help"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/in_peso"
         app:layout_constraintTop_toBottomOf="@+id/edad_help"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -613,29 +572,16 @@
         android:layout_marginTop="16dp"
         android:background="#FAFAFA"
         android:foreground="@android:drawable/ic_menu_help"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/spinner_age"
         app:layout_constraintTop_toBottomOf="@+id/txt"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="testget"
-        android:text="test"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/back2"
-        app:layout_constraintStart_toEndOf="@+id/back" />
 
     <TextView
         android:id="@+id/t1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/terminos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -646,10 +592,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:gravity="center"
+        android:onClick="legal"
         android:text="@string/hyperlink"
-        app:layout_constraintBottom_toTopOf="@+id/back2"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -659,7 +606,45 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:entries="@array/activfisica"
+        android:spinnerMode="dialog"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt18" />
+        app:layout_constraintTop_toBottomOf="@+id/txt9" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="122dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:onClick="testget"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/back2"
+        app:layout_constraintStart_toEndOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:autoText="false"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="Ingreso De Datos"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
